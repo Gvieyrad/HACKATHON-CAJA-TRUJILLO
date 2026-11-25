@@ -1,0 +1,196 @@
+{
+ "carpeta": "data/ciego",
+ "sha256_prereg": "8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c",
+ "k_final": 41,
+ "n_apps_final": 10250,
+ "tabla": [
+  {
+   "metodo": "lgbm_puerta",
+   "n_cola": 41,
+   "precision": 0.07317073170731707,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.17073170731707318,
+   "recall_anillos": 0.07894736842105263,
+   "fp_grupos_legit": 0.019753086419753086,
+   "cola_legit_grupo": 0.5853658536585366,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.3333333333333333,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.04,
+    "cooperativa": 0.025,
+    "familia": 0.024285714285714285,
+    "mercado": 0.0,
+    "parientes_avales": 0.014285714285714285
+   }
+  },
+  {
+   "metodo": "lgbm_sin_puerta",
+   "n_cola": 41,
+   "precision": 0.04878048780487805,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.12195121951219512,
+   "recall_anillos": 0.05263157894736842,
+   "fp_grupos_legit": 0.018930041152263374,
+   "cola_legit_grupo": 0.5609756097560976,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.2222222222222222,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.016666666666666666,
+    "ciber": 0.04,
+    "cooperativa": 0.025,
+    "familia": 0.025714285714285714,
+    "mercado": 0.0,
+    "parientes_avales": 0.005714285714285714
+   }
+  },
+  {
+   "metodo": "lgbm_solo_relacional",
+   "n_cola": 41,
+   "precision": 0.07317073170731707,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.17073170731707318,
+   "recall_anillos": 0.07894736842105263,
+   "fp_grupos_legit": 0.02551440329218107,
+   "cola_legit_grupo": 0.7804878048780488,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.3333333333333333,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.08,
+    "cooperativa": 0.05,
+    "familia": 0.015714285714285715,
+    "mercado": 0.0,
+    "parientes_avales": 0.045714285714285714
+   }
+  },
+  {
+   "metodo": "sorpresa",
+   "n_cola": 41,
+   "precision": 0.12195121951219512,
+   "prec_ic_lo": 0.024390243902439025,
+   "prec_ic_hi": 0.24390243902439024,
+   "recall_anillos": 0.13157894736842105,
+   "fp_grupos_legit": 0.0205761316872428,
+   "cola_legit_grupo": 0.6097560975609756,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.25,
+    "rafaga_casi_igual": 0.3333333333333333,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.016666666666666666,
+    "ciber": 0.0,
+    "cooperativa": 0.0,
+    "familia": 0.03428571428571429,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  },
+  {
+   "metodo": "regla_exacta",
+   "n_cola": 41,
+   "precision": 0.0975609756097561,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.24444444444444444,
+   "recall_anillos": 0.05263157894736842,
+   "fp_grupos_legit": 0.027983539094650206,
+   "cola_legit_grupo": 0.8292682926829268,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.18181818181818182
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 1.0,
+    "cooperativa": 0.0,
+    "familia": 0.012857142857142857,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  },
+  {
+   "metodo": "regla_exacta_con_tope",
+   "n_cola": 41,
+   "precision": 0.0975609756097561,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.24444444444444444,
+   "recall_anillos": 0.05263157894736842,
+   "fp_grupos_legit": 0.027983539094650206,
+   "cola_legit_grupo": 0.8292682926829268,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.18181818181818182
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.8,
+    "cooperativa": 0.0,
+    "familia": 0.02,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  }
+ ],
+ "diferencia_vs_regla_con_tope": {
+  "diferencia_precision": -0.018463080181841875,
+  "ic_lo": -0.2,
+  "ic_hi": 0.12195121951219512
+ },
+ "C5_cumple": false,
+ "sorpresa_vs_regla_con_tope": {
+  "diferencia_precision": 0.03146374908645081,
+  "ic_lo": -0.15473473648640496,
+  "ic_hi": 0.1926516572858036
+ },
+ "anillos": 38,
+ "tipologias": {
+  "cadena_avales": 10,
+  "direccion_escalonada": 8,
+  "rafaga_casi_igual": 9,
+  "rotacion_dispositivos": 11
+ },
+ "anticipacion": [
+  {
+   "tipologia": "cadena_avales",
+   "anillos": 10,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  },
+  {
+   "tipologia": "direccion_escalonada",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.375,
+   "evitables_medios": 0.10833333333333334
+  },
+  {
+   "tipologia": "rafaga_casi_igual",
+   "anillos": 9,
+   "detectados_en_alguna_instantanea": 0.8888888888888888,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "rotacion_dispositivos",
+   "anillos": 11,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "carpeta": "data/ciego2",
+ "sha256_prereg": "8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c",
+ "k_final": 40,
+ "n_apps_final": 10000,
+ "tabla": [
+  {
+   "metodo": "lgbm_puerta",
+   "n_cola": 40,
+   "precision": 0.0,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.0,
+   "recall_anillos": 0.0,
+   "fp_grupos_legit": 0.0423728813559322,
+   "cola_legit_grupo": 0.125,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.0,
+    "fraccionamiento_multiagencia": 0.0,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 0.0,
+    "familia": 0.04285714285714286,
+    "mercado": 0.0,
+    "taller": 0.13333333333333333
+   }
+  },
+  {
+   "metodo": "lgbm_sin_puerta",
+   "n_cola": 40,
+   "precision": 0.075,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.175,
+   "recall_anillos": 0.08823529411764706,
+   "fp_grupos_legit": 0.1016949152542373,
+   "cola_legit_grupo": 0.3,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.0,
+    "fraccionamiento_multiagencia": 0.375,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 0.0,
+    "familia": 0.1,
+    "mercado": 0.0,
+    "taller": 0.3333333333333333
+   }
+  },
+  {
+   "metodo": "lgbm_solo_relacional",
+   "n_cola": 40,
+   "precision": 0.125,
+   "prec_ic_lo": 0.02564102564102564,
+   "prec_ic_hi": 0.24405487804878034,
+   "recall_anillos": 0.11764705882352941,
+   "fp_grupos_legit": 0.1271186440677966,
+   "cola_legit_grupo": 0.375,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.0,
+    "fraccionamiento_multiagencia": 0.5,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 0.0,
+    "familia": 0.11428571428571428,
+    "mercado": 0.0,
+    "taller": 0.4666666666666667
+   }
+  },
+  {
+   "metodo": "sorpresa",
+   "n_cola": 40,
+   "precision": 0.2,
+   "prec_ic_lo": 0.07692307692307693,
+   "prec_ic_hi": 0.34146341463414637,
+   "recall_anillos": 0.20588235294117646,
+   "fp_grupos_legit": 0.025423728813559324,
+   "cola_legit_grupo": 0.075,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.0,
+    "fraccionamiento_multiagencia": 0.875,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 0.0,
+    "familia": 0.014285714285714285,
+    "mercado": 0.0,
+    "taller": 0.13333333333333333
+   }
+  },
+  {
+   "metodo": "regla_exacta",
+   "n_cola": 40,
+   "precision": 0.1,
+   "prec_ic_lo": 0.022222222222222223,
+   "prec_ic_hi": 0.20512820512820512,
+   "recall_anillos": 0.11764705882352941,
+   "fp_grupos_legit": 0.2033898305084746,
+   "cola_legit_grupo": 0.825,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.4444444444444444,
+    "fraccionamiento_multiagencia": 0.0,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 1.0,
+    "familia": 0.22857142857142856,
+    "mercado": 0.0,
+    "taller": 0.0
+   }
+  },
+  {
+   "metodo": "regla_exacta_con_tope",
+   "n_cola": 40,
+   "precision": 0.1,
+   "prec_ic_lo": 0.023255813953488372,
+   "prec_ic_hi": 0.21052631578947367,
+   "recall_anillos": 0.11764705882352941,
+   "fp_grupos_legit": 0.2033898305084746,
+   "cola_legit_grupo": 0.725,
+   "recall_por_tipologia": {
+    "domicilio_como_negocio": 0.0,
+    "enlace_heterogeneo": 0.4444444444444444,
+    "fraccionamiento_multiagencia": 0.0,
+    "sim_secuencial": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "cibercafe": 0.75,
+    "familia": 0.2571428571428571,
+    "mercado": 0.0,
+    "taller": 0.0
+   }
+  }
+ ],
+ "diferencia_vs_regla_con_tope": {
+  "diferencia_precision": -0.10010855206028381,
+  "ic_lo": -0.20512820512820512,
+  "ic_hi": -0.023255813953488372
+ },
+ "C5_cumple": false,
+ "sorpresa_vs_regla_con_tope": {
+  "diferencia_precision": 0.10286762732848775,
+  "ic_lo": -0.048782051282051285,
+  "ic_hi": 0.26047556267068456
+ },
+ "anillos": 34,
+ "tipologias": {
+  "domicilio_como_negocio": 8,
+  "enlace_heterogeneo": 9,
+  "fraccionamiento_multiagencia": 8,
+  "sim_secuencial": 9
+ },
+ "anticipacion": [
+  {
+   "tipologia": "domicilio_como_negocio",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  },
+  {
+   "tipologia": "enlace_heterogeneo",
+   "anillos": 9,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  },
+  {
+   "tipologia": "fraccionamiento_multiagencia",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  },
+  {
+   "tipologia": "sim_secuencial",
+   "anillos": 9,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  }
+ ]
+}

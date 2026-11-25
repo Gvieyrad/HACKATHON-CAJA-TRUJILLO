@@ -1,0 +1,68 @@
+{
+ "sha256_prereg": "8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c",
+ "corte": 179,
+ "filas": [
+  {
+   "tipologia_retenida": "colusion_asesor",
+   "lgbm_puerta": 0.0,
+   "lgbm_puerta_con_entrenamiento_completo": 0.0,
+   "lgbm_sin_puerta": 0.0,
+   "lgbm_sin_puerta_con_entrenamiento_completo": 0.0,
+   "sorpresa": 0.0,
+   "sorpresa_con_entrenamiento_completo": 0.0,
+   "regla_exacta_con_tope": 0.0,
+   "regla_exacta_con_tope_con_entrenamiento_completo": 0.0
+  },
+  {
+   "tipologia_retenida": "identidad_sintetica",
+   "lgbm_puerta": 0.25,
+   "lgbm_puerta_con_entrenamiento_completo": 0.375,
+   "lgbm_sin_puerta": 0.25,
+   "lgbm_sin_puerta_con_entrenamiento_completo": 0.5,
+   "sorpresa": 0.375,
+   "sorpresa_con_entrenamiento_completo": 0.375,
+   "regla_exacta_con_tope": 0.75,
+   "regla_exacta_con_tope_con_entrenamiento_completo": 0.75
+  },
+  {
+   "tipologia_retenida": "prestanombres",
+   "lgbm_puerta": 0.75,
+   "lgbm_puerta_con_entrenamiento_completo": 0.75,
+   "lgbm_sin_puerta": 1.0,
+   "lgbm_sin_puerta_con_entrenamiento_completo": 1.0,
+   "sorpresa": 1.0,
+   "sorpresa_con_entrenamiento_completo": 1.0,
+   "regla_exacta_con_tope": 0.875,
+   "regla_exacta_con_tope_con_entrenamiento_completo": 0.875
+  },
+  {
+   "tipologia_retenida": "referencias_cruzadas",
+   "lgbm_puerta": 0.375,
+   "lgbm_puerta_con_entrenamiento_completo": 0.625,
+   "lgbm_sin_puerta": 0.625,
+   "lgbm_sin_puerta_con_entrenamiento_completo": 1.0,
+   "sorpresa": 0.0,
+   "sorpresa_con_entrenamiento_completo": 0.0,
+   "regla_exacta_con_tope": 0.0,
+   "regla_exacta_con_tope_con_entrenamiento_completo": 0.0
+  },
+  {
+   "tipologia_retenida": "sin_atributos",
+   "lgbm_puerta": 0.0,
+   "lgbm_puerta_con_entrenamiento_completo": 0.0,
+   "lgbm_sin_puerta": 0.0,
+   "lgbm_sin_puerta_con_entrenamiento_completo": 0.0,
+   "sorpresa": 0.0,
+   "sorpresa_con_entrenamiento_completo": 0.0,
+   "regla_exacta_con_tope": 0.0,
+   "regla_exacta_con_tope_con_entrenamiento_completo": 0.0
+  }
+ ],
+ "recall_medio_retenida": {
+  "lgbm_puerta": 0.275,
+  "lgbm_sin_puerta": 0.375,
+  "sorpresa": 0.275,
+  "regla_exacta_con_tope": 0.325
+ },
+ "C6_cumple": true
+}

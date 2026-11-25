@@ -1,0 +1,196 @@
+{
+ "semilla": 202,
+ "version_prereg": 5,
+ "sha256_prereg": "8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c",
+ "k_final": 50,
+ "n_apps_final": 12321,
+ "tabla": [
+  {
+   "metodo": "lgbm_puerta",
+   "n_cola": 22,
+   "precision": 0.6363636363636364,
+   "prec_ic_lo": 0.45454545454545453,
+   "prec_ic_hi": 0.8181818181818182,
+   "recall_anillos": 0.35,
+   "fp_grupos_legit": 0.007692307692307693,
+   "cola_legit_grupo": 0.36363636363636365,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.375,
+    "prestanombres": 0.75,
+    "referencias_cruzadas": 0.625,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.0070921985815602835,
+    "mercado": 0.022727272727272728
+   }
+  },
+  {
+   "metodo": "lgbm_sin_puerta",
+   "n_cola": 50,
+   "precision": 0.4,
+   "prec_ic_lo": 0.28,
+   "prec_ic_hi": 0.54,
+   "recall_anillos": 0.5,
+   "fp_grupos_legit": 0.01730769230769231,
+   "cola_legit_grupo": 0.36,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.5,
+    "prestanombres": 1.0,
+    "referencias_cruzadas": 1.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.015197568389057751,
+    "mercado": 0.06818181818181818
+   }
+  },
+  {
+   "metodo": "lgbm_solo_relacional",
+   "n_cola": 50,
+   "precision": 0.38,
+   "prec_ic_lo": 0.26,
+   "prec_ic_hi": 0.52,
+   "recall_anillos": 0.475,
+   "fp_grupos_legit": 0.01730769230769231,
+   "cola_legit_grupo": 0.36,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.375,
+    "prestanombres": 1.0,
+    "referencias_cruzadas": 1.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.015197568389057751,
+    "mercado": 0.06818181818181818
+   }
+  },
+  {
+   "metodo": "sorpresa",
+   "n_cola": 50,
+   "precision": 0.22,
+   "prec_ic_lo": 0.12,
+   "prec_ic_hi": 0.34,
+   "recall_anillos": 0.275,
+   "fp_grupos_legit": 0.0375,
+   "cola_legit_grupo": 0.78,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.375,
+    "prestanombres": 1.0,
+    "referencias_cruzadas": 0.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.03951367781155015,
+    "mercado": 0.0
+   }
+  },
+  {
+   "metodo": "regla_exacta",
+   "n_cola": 50,
+   "precision": 0.26,
+   "prec_ic_lo": 0.1568627450980392,
+   "prec_ic_hi": 0.3877551020408163,
+   "recall_anillos": 0.325,
+   "fp_grupos_legit": 0.03461538461538462,
+   "cola_legit_grupo": 0.74,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.75,
+    "prestanombres": 0.875,
+    "referencias_cruzadas": 0.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.034447821681864235,
+    "mercado": 0.045454545454545456
+   }
+  },
+  {
+   "metodo": "regla_exacta_con_tope",
+   "n_cola": 50,
+   "precision": 0.26,
+   "prec_ic_lo": 0.1568627450980392,
+   "prec_ic_hi": 0.3877551020408163,
+   "recall_anillos": 0.325,
+   "fp_grupos_legit": 0.03461538461538462,
+   "cola_legit_grupo": 0.74,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.75,
+    "prestanombres": 0.875,
+    "referencias_cruzadas": 0.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.034447821681864235,
+    "mercado": 0.045454545454545456
+   }
+  }
+ ],
+ "veredicto": {
+  "C1": {
+   "cumple": true,
+   "diferencia_precision": 0.38794734556836036,
+   "ic_lo": 0.15450834879406308,
+   "ic_hi": 0.6283645276292336
+  },
+  "C2": {
+   "cumple": false,
+   "valor": 0.36363636363636365
+  },
+  "C3": {
+   "cumple": true,
+   "valor": 1.1619221512158686
+  },
+  "C4": {
+   "cumple": true,
+   "valor": 0.5833333333333334
+  }
+ },
+ "anticipacion": [
+  {
+   "tipologia": "colusion_asesor",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.375,
+   "evitables_medios": 0.16666666666666666
+  },
+  {
+   "tipologia": "identidad_sintetica",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.75,
+   "evitables_medios": 0.041666666666666664
+  },
+  {
+   "tipologia": "prestanombres",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.75,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "referencias_cruzadas",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.625,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "sin_atributos",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  }
+ ],
+ "c3_alertas_por_1000": 1.1619221512158686,
+ "expedientes": 22,
+ "fallas_verificador": 0
+}

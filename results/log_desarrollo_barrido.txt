@@ -1,0 +1,76 @@
+entrenando (semilla 101)...
+evaluando (semilla 202)...
+barrido de parámetros...
+  barrido 1 / 14 {'sutileza': 0.0, 'mult_comparticion': 0.5, 'anillos_chicos': False}
+  barrido 2 / 14 {'sutileza': 0.0, 'mult_comparticion': 0.5, 'anillos_chicos': True}
+  barrido 3 / 14 {'sutileza': 0.0, 'mult_comparticion': 1.0, 'anillos_chicos': False}
+  barrido 4 / 14 {'sutileza': 0.0, 'mult_comparticion': 1.0, 'anillos_chicos': True}
+  barrido 5 / 14 {'sutileza': 0.0, 'mult_comparticion': 2.0, 'anillos_chicos': False}
+  barrido 6 / 14 {'sutileza': 0.0, 'mult_comparticion': 2.0, 'anillos_chicos': True}
+  barrido 7 / 14 {'sutileza': 0.5, 'mult_comparticion': 0.5, 'anillos_chicos': False}
+  barrido 8 / 14 {'sutileza': 0.5, 'mult_comparticion': 0.5, 'anillos_chicos': True}
+  barrido 9 / 14 {'sutileza': 0.5, 'mult_comparticion': 1.0, 'anillos_chicos': False}
+  barrido 10 / 14 {'sutileza': 0.5, 'mult_comparticion': 1.0, 'anillos_chicos': True}
+  barrido 11 / 14 {'sutileza': 0.5, 'mult_comparticion': 2.0, 'anillos_chicos': False}
+  barrido 12 / 14 {'sutileza': 0.5, 'mult_comparticion': 2.0, 'anillos_chicos': True}
+  barrido 13 / 14 {'anillos_por_tipologia': 4}
+  barrido 14 / 14 {'anillos_por_tipologia': 16}
+# Resultados RIE-02 — semilla 202
+
+Pre-registro v4 sha256 `7576ecdad989de11559a749b4943401e0664a7a2df52a40a2f215f8a712123d5`
+
+## Cola final (presupuesto k=50 casos, 12321 solicitudes)
+
+| método | n cola | precisión [IC95%] | recall anillos | grupos legít. en cola | cola = grupo legít. |
+|---|---|---|---|---|---|
+| lgbm_puerta | 27 | 0.44 [0.26, 0.63] | 0.30 | 0.013 | 0.48 |
+| lgbm_sin_puerta | 50 | 0.42 [0.30, 0.56] | 0.53 | 0.017 | 0.36 |
+| lgbm_solo_relacional | 50 | 0.44 [0.32, 0.58] | 0.55 | 0.019 | 0.40 |
+| regla_exacta | 50 | 0.26 [0.16, 0.39] | 0.33 | 0.035 | 0.74 |
+| regla_exacta_con_tope | 50 | 0.26 [0.16, 0.39] | 0.33 | 0.035 | 0.74 |
+
+Recall por tipología (cola final):
+
+- lgbm_puerta: colusion_asesor=0.00, identidad_sintetica=0.38, prestanombres=0.50, referencias_cruzadas=0.62, sin_atributos=0.00
+- lgbm_sin_puerta: colusion_asesor=0.00, identidad_sintetica=0.62, prestanombres=1.00, referencias_cruzadas=1.00, sin_atributos=0.00
+- lgbm_solo_relacional: colusion_asesor=0.00, identidad_sintetica=0.75, prestanombres=1.00, referencias_cruzadas=1.00, sin_atributos=0.00
+- regla_exacta: colusion_asesor=0.00, identidad_sintetica=0.75, prestanombres=0.88, referencias_cruzadas=0.00, sin_atributos=0.00
+- regla_exacta_con_tope: colusion_asesor=0.00, identidad_sintetica=0.75, prestanombres=0.88, referencias_cruzadas=0.00, sin_atributos=0.00
+
+## Criterios pre-registrados
+
+- **C1**: NO CUMPLE — {"diferencia_precision": 0.19252647014748486, "ic_lo": -0.026740740740740742, "ic_hi": 0.4139433551198257}
+- **C2**: NO CUMPLE — {"valor": 0.48148148148148145}
+- **C3**: CUMPLE — {"valor": 1.3279110299609926}
+- **C4**: CUMPLE — {"valor": 0.5}
+
+## Anticipación (lgbm_puerta, todas las instantáneas)
+
+- colusion_asesor: 8 anillos, detectados en alguna instantánea 0.38, solicitudes aún evitables al detectar: 0.16666666666666666
+- identidad_sintetica: 8 anillos, detectados en alguna instantánea 0.50, solicitudes aún evitables al detectar: 0.0625
+- prestanombres: 8 anillos, detectados en alguna instantánea 0.50, solicitudes aún evitables al detectar: 0.0
+- referencias_cruzadas: 8 anillos, detectados en alguna instantánea 0.62, solicitudes aún evitables al detectar: 0.0
+- sin_atributos: 8 anillos, detectados en alguna instantánea 0.00, solicitudes aún evitables al detectar: None
+
+Mundo sin anillos: 1.33 alertas por 1000 solicitudes.
+Expedientes: 27 (fallas del verificador: 0)
+
+## Barrido de parámetros del generador (precisión / recall de anillos / grupos legít. en cola)
+
+| parámetros | lgbm_puerta | lgbm_sin_puerta | regla_exacta_con_tope |
+|---|---|---|---|
+| {'sutileza': 0.0, 'mult_comparticion': 0.5, 'anillos_chicos': False} | 0.78 / 0.45 / 0.004 | 0.48 / 0.60 / 0.013 | 0.32 / 0.40 / 0.059 |
+| {'sutileza': 0.0, 'mult_comparticion': 0.5, 'anillos_chicos': True} | 0.90 / 0.45 / 0.004 | 0.47 / 0.57 / 0.020 | 0.33 / 0.40 / 0.053 |
+| {'sutileza': 0.0, 'mult_comparticion': 1.0, 'anillos_chicos': False} | 0.52 / 0.42 / 0.015 | 0.50 / 0.60 / 0.017 | 0.28 / 0.35 / 0.035 |
+| {'sutileza': 0.0, 'mult_comparticion': 1.0, 'anillos_chicos': True} | 0.55 / 0.40 / 0.011 | 0.45 / 0.55 / 0.018 | 0.24 / 0.30 / 0.034 |
+| {'sutileza': 0.0, 'mult_comparticion': 2.0, 'anillos_chicos': False} | 0.40 / 0.50 / 0.013 | 0.44 / 0.55 / 0.011 | 0.24 / 0.30 / 0.019 |
+| {'sutileza': 0.0, 'mult_comparticion': 2.0, 'anillos_chicos': True} | 0.31 / 0.38 / 0.016 | 0.37 / 0.45 / 0.012 | 0.06 / 0.07 / 0.023 |
+| {'sutileza': 0.5, 'mult_comparticion': 0.5, 'anillos_chicos': False} | 0.93 / 0.35 / 0.002 | 0.48 / 0.60 / 0.018 | 0.32 / 0.40 / 0.057 |
+| {'sutileza': 0.5, 'mult_comparticion': 0.5, 'anillos_chicos': True} | 0.73 / 0.20 / 0.004 | 0.45 / 0.55 / 0.024 | 0.33 / 0.40 / 0.058 |
+| {'sutileza': 0.5, 'mult_comparticion': 1.0, 'anillos_chicos': False} | 0.30 / 0.25 / 0.020 | 0.44 / 0.55 / 0.020 | 0.28 / 0.35 / 0.035 |
+| {'sutileza': 0.5, 'mult_comparticion': 1.0, 'anillos_chicos': True} | 0.38 / 0.23 / 0.012 | 0.47 / 0.57 / 0.016 | 0.22 / 0.28 / 0.037 |
+| {'sutileza': 0.5, 'mult_comparticion': 2.0, 'anillos_chicos': False} | 0.26 / 0.33 / 0.018 | 0.44 / 0.55 / 0.012 | 0.12 / 0.15 / 0.022 |
+| {'sutileza': 0.5, 'mult_comparticion': 2.0, 'anillos_chicos': True} | 0.14 / 0.17 / 0.020 | 0.38 / 0.47 / 0.015 | 0.08 / 0.10 / 0.023 |
+| {'anillos_por_tipologia': 4} | 0.32 / 0.55 / 0.022 | 0.27 / 0.65 / 0.028 | 0.14 / 0.35 / 0.040 |
+| {'anillos_por_tipologia': 16} | 0.63 / 0.40 / 0.017 | 0.86 / 0.55 / 0.005 | 0.51 / 0.33 / 0.024 |
+

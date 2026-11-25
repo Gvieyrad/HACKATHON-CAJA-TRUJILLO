@@ -1,0 +1,4163 @@
+[
+ {
+  "caso_id": "R00131",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 7,
+  "score": 0.9999331395707025,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000931",
+   "A001085",
+   "A003438",
+   "A003568",
+   "A005308",
+   "A011337",
+   "A011394"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00131 (7 solicitudes) merece revisión.\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7521]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:5505]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:9060]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:9512]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:0614]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:3809]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:6999]).\n- 3 de 7 solicitudes con monto alto respecto del ingreso típico del rubro.\n- 3 de 7 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 7 solicitudes: z del tiempo de llenado -0.70, z de monto/ingreso +0.75; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0077152",
+    "valor_visible": "[referencia:7521]",
+    "refs": [
+     "A000931",
+     "A005308",
+     "A011337"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7521])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0098821",
+    "valor_visible": "[referencia:5505]",
+    "refs": [
+     "A000931",
+     "A003568",
+     "A005308"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:5505])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0035427",
+    "valor_visible": "[referencia:9060]",
+    "refs": [
+     "A005308",
+     "A011337",
+     "A011394"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:9060])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0005141",
+    "valor_visible": "[referencia:9512]",
+    "refs": [
+     "A000931",
+     "A001085",
+     "A003568"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:9512])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0054216",
+    "valor_visible": "[referencia:0614]",
+    "refs": [
+     "A001085",
+     "A003438",
+     "A003568"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:0614])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0095297",
+    "valor_visible": "[referencia:3809]",
+    "refs": [
+     "A001085",
+     "A003438",
+     "A011394"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:3809])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0044297",
+    "valor_visible": "[referencia:6999]",
+    "refs": [
+     "A003438",
+     "A011337",
+     "A011394"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:6999])."
+   },
+   {
+    "id": "C_ratio_alto",
+    "familia": "conductual",
+    "tipo": "ratio_alto",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A000931",
+     "A005308",
+     "A011337"
+    ],
+    "texto": "3 de 7 solicitudes con monto alto respecto del ingreso típico del rubro."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A000931",
+     "A001085",
+     "A003438"
+    ],
+    "texto": "3 de 7 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.701,
+     "z_ratio": 0.747,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 7
+    },
+    "refs": [
+     "A000931",
+     "A001085",
+     "A003438",
+     "A003568",
+     "A005308",
+     "A011337",
+     "A011394"
+    ],
+    "texto": "Promedio de las 7 solicitudes: z del tiempo de llenado -0.70, z de monto/ingreso +0.75; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01149",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 7,
+  "score": 0.9999277991031964,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A002527",
+   "A003370",
+   "A005216",
+   "A005571",
+   "A006065",
+   "A006758",
+   "A009877"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud."
+  ],
+  "patron": "relacional|dispositivo+negocio",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01149 (7 solicitudes) merece revisión.\n- 7 solicitudes comparten el mismo dispositivo ([dispositivo:4564]).\n- 7 solicitudes comparten el mismo negocio ([negocio:1297]).\n- 3 de 7 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 7 solicitudes: z del tiempo de llenado -0.79, z de monto/ingreso +0.35; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Db7423714d3",
+    "valor_visible": "[dispositivo:4564]",
+    "refs": [
+     "A002527",
+     "A003370",
+     "A005216",
+     "A005571",
+     "A006065",
+     "A006758",
+     "A009877"
+    ],
+    "texto": "7 solicitudes comparten el mismo dispositivo ([dispositivo:4564])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0009564",
+    "valor_visible": "[negocio:1297]",
+    "refs": [
+     "A002527",
+     "A003370",
+     "A005216",
+     "A005571",
+     "A006065",
+     "A006758",
+     "A009877"
+    ],
+    "texto": "7 solicitudes comparten el mismo negocio ([negocio:1297])."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A002527",
+     "A006065",
+     "A009877"
+    ],
+    "texto": "3 de 7 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.785,
+     "z_ratio": 0.346,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 7
+    },
+    "refs": [
+     "A002527",
+     "A003370",
+     "A005216",
+     "A005571",
+     "A006065",
+     "A006758",
+     "A009877"
+    ],
+    "texto": "Promedio de las 7 solicitudes: z del tiempo de llenado -0.79, z de monto/ingreso +0.35; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00628",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 6,
+  "score": 0.9999220441078605,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A002627",
+   "A005561",
+   "A006419",
+   "A007221",
+   "A010339",
+   "A010616"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud."
+  ],
+  "patron": "relacional|dispositivo+negocio",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00628 (6 solicitudes) merece revisión.\n- 6 solicitudes comparten el mismo dispositivo ([dispositivo:8869]).\n- 6 solicitudes comparten el mismo negocio ([negocio:3020]).\n- Promedio de las 6 solicitudes: z del tiempo de llenado -0.07, z de monto/ingreso +0.36; 0 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D9d6410fcdc",
+    "valor_visible": "[dispositivo:8869]",
+    "refs": [
+     "A002627",
+     "A005561",
+     "A006419",
+     "A007221",
+     "A010339",
+     "A010616"
+    ],
+    "texto": "6 solicitudes comparten el mismo dispositivo ([dispositivo:8869])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0006511",
+    "valor_visible": "[negocio:3020]",
+    "refs": [
+     "A002627",
+     "A005561",
+     "A006419",
+     "A007221",
+     "A010339",
+     "A010616"
+    ],
+    "texto": "6 solicitudes comparten el mismo negocio ([negocio:3020])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.067,
+     "z_ratio": 0.365,
+     "fallo_dom": 0,
+     "noche": 1,
+     "n": 6
+    },
+    "refs": [
+     "A002627",
+     "A005561",
+     "A006419",
+     "A007221",
+     "A010339",
+     "A010616"
+    ],
+    "texto": "Promedio de las 6 solicitudes: z del tiempo de llenado -0.07, z de monto/ingreso +0.36; 0 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00979",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 9,
+  "score": 0.9999012650467567,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A001608",
+   "A002101",
+   "A002408",
+   "A003231",
+   "A007459",
+   "A008850",
+   "A008860",
+   "A010462",
+   "A011233"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00979 (9 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7801]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:3934]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4648]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:1620]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:3043]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:3074]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4440]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4431]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7446]).\n- 4 de 9 solicitudes con monto alto respecto del ingreso típico del rubro.\n- 4 de 9 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 9 solicitudes: z del tiempo de llenado -0.72, z de monto/ingreso +0.88; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "san andres|u|1",
+    "valor_visible": "[direccion_hogar_aprox:7801]",
+    "refs": [
+     "A001608",
+     "A002101"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7801])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0101724",
+    "valor_visible": "[referencia:3934]",
+    "refs": [
+     "A001608",
+     "A008860",
+     "A011233"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:3934])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0100992",
+    "valor_visible": "[referencia:4648]",
+    "refs": [
+     "A001608",
+     "A007459",
+     "A008860"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4648])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0091933",
+    "valor_visible": "[referencia:1620]",
+    "refs": [
+     "A008860",
+     "A010462",
+     "A011233"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:1620])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0050446",
+    "valor_visible": "[referencia:3043]",
+    "refs": [
+     "A002408",
+     "A007459",
+     "A008850"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:3043])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0026765",
+    "valor_visible": "[referencia:3074]",
+    "refs": [
+     "A002408",
+     "A003231",
+     "A008850"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:3074])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0026394",
+    "valor_visible": "[referencia:4440]",
+    "refs": [
+     "A001608",
+     "A007459",
+     "A008850"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4440])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0085660",
+    "valor_visible": "[referencia:4431]",
+    "refs": [
+     "A002408",
+     "A003231",
+     "A010462"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4431])."
+   },
+   {
+    "id": "R8",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0071103",
+    "valor_visible": "[referencia:7446]",
+    "refs": [
+     "A003231",
+     "A010462",
+     "A011233"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7446])."
+   },
+   {
+    "id": "C_ratio_alto",
+    "familia": "conductual",
+    "tipo": "ratio_alto",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A001608",
+     "A008850",
+     "A010462",
+     "A011233"
+    ],
+    "texto": "4 de 9 solicitudes con monto alto respecto del ingreso típico del rubro."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A002101",
+     "A008860",
+     "A010462",
+     "A011233"
+    ],
+    "texto": "4 de 9 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.718,
+     "z_ratio": 0.884,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 9
+    },
+    "refs": [
+     "A001608",
+     "A002101",
+     "A002408",
+     "A003231",
+     "A007459",
+     "A008850",
+     "A008860",
+     "A010462",
+     "A011233"
+    ],
+    "texto": "Promedio de las 9 solicitudes: z del tiempo de llenado -0.72, z de monto/ingreso +0.88; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00225",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 4,
+  "score": 0.9998581071572239,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A002298",
+   "A002917",
+   "A004184",
+   "A009720"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+dispositivo+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00225 (4 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3485]).\n- 4 solicitudes comparten el mismo dispositivo ([dispositivo:0309]).\n- 4 solicitudes comparten el mismo teléfono (…910).\n- 2 de 4 solicitudes con monto alto respecto del ingreso típico del rubro.\n- Promedio de las 4 solicitudes: z del tiempo de llenado -0.10, z de monto/ingreso +0.85; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "san andres|e|",
+    "valor_visible": "[direccion_hogar_aprox:3485]",
+    "refs": [
+     "A002298",
+     "A009720"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3485])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D988cfc4406",
+    "valor_visible": "[dispositivo:0309]",
+    "refs": [
+     "A002298",
+     "A002917",
+     "A004184",
+     "A009720"
+    ],
+    "texto": "4 solicitudes comparten el mismo dispositivo ([dispositivo:0309])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "928511910",
+    "valor_visible": "…910",
+    "refs": [
+     "A002298",
+     "A002917",
+     "A004184",
+     "A009720"
+    ],
+    "texto": "4 solicitudes comparten el mismo teléfono (…910)."
+   },
+   {
+    "id": "C_ratio_alto",
+    "familia": "conductual",
+    "tipo": "ratio_alto",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A002298",
+     "A004184"
+    ],
+    "texto": "2 de 4 solicitudes con monto alto respecto del ingreso típico del rubro."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.1,
+     "z_ratio": 0.853,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 4
+    },
+    "refs": [
+     "A002298",
+     "A002917",
+     "A004184",
+     "A009720"
+    ],
+    "texto": "Promedio de las 4 solicitudes: z del tiempo de llenado -0.10, z de monto/ingreso +0.85; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01398",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 4,
+  "score": 0.9997881119305886,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A005849",
+   "A006132",
+   "A011717",
+   "A011999"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud."
+  ],
+  "patron": "relacional|dispositivo+negocio",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01398 (4 solicitudes) merece revisión.\n- 4 solicitudes comparten el mismo dispositivo ([dispositivo:7376]).\n- 4 solicitudes comparten el mismo negocio ([negocio:5172]).\n- 3 de 4 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 4 solicitudes: z del tiempo de llenado -1.32, z de monto/ingreso +1.03; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D6840398297",
+    "valor_visible": "[dispositivo:7376]",
+    "refs": [
+     "A005849",
+     "A006132",
+     "A011717",
+     "A011999"
+    ],
+    "texto": "4 solicitudes comparten el mismo dispositivo ([dispositivo:7376])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0030821",
+    "valor_visible": "[negocio:5172]",
+    "refs": [
+     "A005849",
+     "A006132",
+     "A011717",
+     "A011999"
+    ],
+    "texto": "4 solicitudes comparten el mismo negocio ([negocio:5172])."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A005849",
+     "A006132",
+     "A011717"
+    ],
+    "texto": "3 de 4 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -1.321,
+     "z_ratio": 1.031,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 4
+    },
+    "refs": [
+     "A005849",
+     "A006132",
+     "A011717",
+     "A011999"
+    ],
+    "texto": "Promedio de las 4 solicitudes: z del tiempo de llenado -1.32, z de monto/ingreso +1.03; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01281",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 7,
+  "score": 0.9997296101350923,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000537",
+   "A004189",
+   "A004233",
+   "A006053",
+   "A009585",
+   "A010063",
+   "A012252"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01281 (7 solicitudes) merece revisión.\n- 3 solicitudes comparten la misma persona de referencia ([referencia:8896]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:9225]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:5801]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:2876]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7184]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4407]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:8045]).\n- 3 de 7 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 7 solicitudes: z del tiempo de llenado -0.50, z de monto/ingreso +0.07; 0 con domicilio no verificado; 2 fuera de horario.\nPosibles explicaciones legítimas: Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0069199",
+    "valor_visible": "[referencia:8896]",
+    "refs": [
+     "A000537",
+     "A006053",
+     "A012252"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:8896])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0001153",
+    "valor_visible": "[referencia:9225]",
+    "refs": [
+     "A000537",
+     "A009585",
+     "A012252"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:9225])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0054148",
+    "valor_visible": "[referencia:5801]",
+    "refs": [
+     "A006053",
+     "A010063",
+     "A012252"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:5801])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0026535",
+    "valor_visible": "[referencia:2876]",
+    "refs": [
+     "A000537",
+     "A004189",
+     "A009585"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:2876])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0010607",
+    "valor_visible": "[referencia:7184]",
+    "refs": [
+     "A004189",
+     "A004233",
+     "A009585"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7184])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0090592",
+    "valor_visible": "[referencia:4407]",
+    "refs": [
+     "A004189",
+     "A004233",
+     "A010063"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4407])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0000527",
+    "valor_visible": "[referencia:8045]",
+    "refs": [
+     "A004233",
+     "A006053",
+     "A010063"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:8045])."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A000537",
+     "A009585",
+     "A012252"
+    ],
+    "texto": "3 de 7 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.504,
+     "z_ratio": 0.065,
+     "fallo_dom": 0,
+     "noche": 2,
+     "n": 7
+    },
+    "refs": [
+     "A000537",
+     "A004189",
+     "A004233",
+     "A006053",
+     "A009585",
+     "A010063",
+     "A012252"
+    ],
+    "texto": "Promedio de las 7 solicitudes: z del tiempo de llenado -0.50, z de monto/ingreso +0.07; 0 con domicilio no verificado; 2 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01405",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 10,
+  "score": 0.9989210685924569,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000358",
+   "A002664",
+   "A002906",
+   "A005829",
+   "A008550",
+   "A010042",
+   "A010651",
+   "A010730",
+   "A011609",
+   "A012197"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+dispositivo+negocio+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01405 (10 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2191]).\n- 8 solicitudes comparten el mismo dispositivo ([dispositivo:8795]).\n- 8 solicitudes comparten el mismo negocio ([negocio:4545]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:6231]).\n- Promedio de las 10 solicitudes: z del tiempo de llenado +0.08, z de monto/ingreso +0.43; 0 con domicilio no verificado; 3 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|p|3",
+    "valor_visible": "[direccion_hogar_aprox:2191]",
+    "refs": [
+     "A000358",
+     "A010042"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2191])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D7b3ac1c161",
+    "valor_visible": "[dispositivo:8795]",
+    "refs": [
+     "A002664",
+     "A002906",
+     "A005829",
+     "A008550",
+     "A010042",
+     "A010651",
+     "A011609",
+     "A012197"
+    ],
+    "texto": "8 solicitudes comparten el mismo dispositivo ([dispositivo:8795])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0008993",
+    "valor_visible": "[negocio:4545]",
+    "refs": [
+     "A002664",
+     "A002906",
+     "A005829",
+     "A008550",
+     "A010042",
+     "A010651",
+     "A011609",
+     "A012197"
+    ],
+    "texto": "8 solicitudes comparten el mismo negocio ([negocio:4545])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0075198",
+    "valor_visible": "[referencia:6231]",
+    "refs": [
+     "A010730",
+     "A011609"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:6231])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": 0.081,
+     "z_ratio": 0.426,
+     "fallo_dom": 0,
+     "noche": 3,
+     "n": 10
+    },
+    "refs": [
+     "A000358",
+     "A002664",
+     "A002906",
+     "A005829",
+     "A008550",
+     "A010042",
+     "A010651",
+     "A010730",
+     "A011609",
+     "A012197"
+    ],
+    "texto": "Promedio de las 10 solicitudes: z del tiempo de llenado +0.08, z de monto/ingreso +0.43; 0 con domicilio no verificado; 3 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00914",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 4,
+  "score": 0.9971754578715042,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A003158",
+   "A004406",
+   "A005813",
+   "A009636"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+dispositivo+negocio",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00914 (4 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8239]).\n- 3 solicitudes comparten el mismo dispositivo ([dispositivo:8931]).\n- 3 solicitudes comparten el mismo negocio ([negocio:7189]).\n- 2 de 4 solicitudes ingresadas fuera de horario.\n- 3 de 4 solicitudes con monto alto respecto del ingreso típico del rubro.\n- Promedio de las 4 solicitudes: z del tiempo de llenado -0.93, z de monto/ingreso +1.25; 0 con domicilio no verificado; 2 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|e|5",
+    "valor_visible": "[direccion_hogar_aprox:8239]",
+    "refs": [
+     "A004406",
+     "A005813"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8239])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Dcc0b1e443d",
+    "valor_visible": "[dispositivo:8931]",
+    "refs": [
+     "A003158",
+     "A005813",
+     "A009636"
+    ],
+    "texto": "3 solicitudes comparten el mismo dispositivo ([dispositivo:8931])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0008416",
+    "valor_visible": "[negocio:7189]",
+    "refs": [
+     "A003158",
+     "A005813",
+     "A009636"
+    ],
+    "texto": "3 solicitudes comparten el mismo negocio ([negocio:7189])."
+   },
+   {
+    "id": "C_noche",
+    "familia": "conductual",
+    "tipo": "noche",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A005813",
+     "A009636"
+    ],
+    "texto": "2 de 4 solicitudes ingresadas fuera de horario."
+   },
+   {
+    "id": "C_ratio_alto",
+    "familia": "conductual",
+    "tipo": "ratio_alto",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A003158",
+     "A005813",
+     "A009636"
+    ],
+    "texto": "3 de 4 solicitudes con monto alto respecto del ingreso típico del rubro."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.932,
+     "z_ratio": 1.253,
+     "fallo_dom": 0,
+     "noche": 2,
+     "n": 4
+    },
+    "refs": [
+     "A003158",
+     "A004406",
+     "A005813",
+     "A009636"
+    ],
+    "texto": "Promedio de las 4 solicitudes: z del tiempo de llenado -0.93, z de monto/ingreso +1.25; 0 con domicilio no verificado; 2 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00959",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 12,
+  "score": 0.9941856536447824,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000242",
+   "A001338",
+   "A001409",
+   "A002991",
+   "A003776",
+   "A007229",
+   "A008336",
+   "A009455",
+   "A010617",
+   "A010941",
+   "A011222",
+   "A011291"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+dispositivo+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00959 (12 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4711]).\n- 7 solicitudes comparten el mismo dispositivo ([dispositivo:4178]).\n- 7 solicitudes comparten el mismo negocio ([negocio:0150]).\n- 4 solicitudes comparten la misma persona de referencia ([referencia:4746]).\n- 2 solicitudes comparten el mismo teléfono (…799).\n- Promedio de las 12 solicitudes: z del tiempo de llenado -0.22, z de monto/ingreso +0.53; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|f|4",
+    "valor_visible": "[direccion_hogar_aprox:4711]",
+    "refs": [
+     "A010941",
+     "A011291"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4711])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D377b8468ee",
+    "valor_visible": "[dispositivo:4178]",
+    "refs": [
+     "A001338",
+     "A001409",
+     "A003776",
+     "A007229",
+     "A008336",
+     "A010617",
+     "A011222"
+    ],
+    "texto": "7 solicitudes comparten el mismo dispositivo ([dispositivo:4178])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0030684",
+    "valor_visible": "[negocio:0150]",
+    "refs": [
+     "A001338",
+     "A001409",
+     "A003776",
+     "A007229",
+     "A008336",
+     "A010617",
+     "A011222"
+    ],
+    "texto": "7 solicitudes comparten el mismo negocio ([negocio:0150])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0105265",
+    "valor_visible": "[referencia:4746]",
+    "refs": [
+     "A000242",
+     "A003776",
+     "A009455",
+     "A011291"
+    ],
+    "texto": "4 solicitudes comparten la misma persona de referencia ([referencia:4746])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "951858799",
+    "valor_visible": "…799",
+    "refs": [
+     "A000242",
+     "A002991"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…799)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.221,
+     "z_ratio": 0.532,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 12
+    },
+    "refs": [
+     "A000242",
+     "A001338",
+     "A001409",
+     "A002991",
+     "A003776",
+     "A007229",
+     "A008336",
+     "A009455",
+     "A010617",
+     "A010941",
+     "A011222",
+     "A011291"
+    ],
+    "texto": "Promedio de las 12 solicitudes: z del tiempo de llenado -0.22, z de monto/ingreso +0.53; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00442",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 12,
+  "score": 0.9834607476776878,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000518",
+   "A000993",
+   "A003479",
+   "A003570",
+   "A003918",
+   "A004634",
+   "A005321",
+   "A005823",
+   "A008732",
+   "A008927",
+   "A009022",
+   "A010613"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00442 (12 solicitudes) merece revisión.\n- 2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5263]).\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0078]).\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:5263]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7078]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8886]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6581]).\n- 5 solicitudes comparten el mismo dispositivo ([dispositivo:3712]).\n- 8 solicitudes comparten el mismo teléfono (…551).\n- 5 de 12 solicitudes con monto alto respecto del ingreso típico del rubro.\n- Promedio de las 12 solicitudes: z del tiempo de llenado -0.46, z de monto/ingreso +0.49; 3 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "buenos aires|u|4",
+    "valor_visible": "[direccion_hogar:5263]",
+    "refs": [
+     "A003479",
+     "A003570"
+    ],
+    "texto": "2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5263])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|u|",
+    "valor_visible": "[direccion_hogar_aprox:0078]",
+    "refs": [
+     "A003479",
+     "A003570",
+     "A005321"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0078])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|u|4",
+    "valor_visible": "[direccion_hogar_aprox:5263]",
+    "refs": [
+     "A003479",
+     "A003570",
+     "A009022"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:5263])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires||9",
+    "valor_visible": "[direccion_hogar_aprox:7078]",
+    "refs": [
+     "A004634",
+     "A008732"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7078])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|u|5",
+    "valor_visible": "[direccion_hogar_aprox:8886]",
+    "refs": [
+     "A003918",
+     "A005321"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8886])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "buenos aires|a|",
+    "valor_visible": "[direccion_hogar_aprox:6581]",
+    "refs": [
+     "A000993",
+     "A008732"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6581])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D569e4c419c",
+    "valor_visible": "[dispositivo:3712]",
+    "refs": [
+     "A000518",
+     "A004634",
+     "A005321",
+     "A008732",
+     "A008927"
+    ],
+    "texto": "5 solicitudes comparten el mismo dispositivo ([dispositivo:3712])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "984534551",
+    "valor_visible": "…551",
+    "refs": [
+     "A000518",
+     "A003570",
+     "A004634",
+     "A005321",
+     "A005823",
+     "A008732",
+     "A008927",
+     "A010613"
+    ],
+    "texto": "8 solicitudes comparten el mismo teléfono (…551)."
+   },
+   {
+    "id": "C_ratio_alto",
+    "familia": "conductual",
+    "tipo": "ratio_alto",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A000518",
+     "A003479",
+     "A003918",
+     "A005321",
+     "A010613"
+    ],
+    "texto": "5 de 12 solicitudes con monto alto respecto del ingreso típico del rubro."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.455,
+     "z_ratio": 0.491,
+     "fallo_dom": 3,
+     "noche": 1,
+     "n": 12
+    },
+    "refs": [
+     "A000518",
+     "A000993",
+     "A003479",
+     "A003570",
+     "A003918",
+     "A004634",
+     "A005321",
+     "A005823",
+     "A008732",
+     "A008927",
+     "A009022",
+     "A010613"
+    ],
+    "texto": "Promedio de las 12 solicitudes: z del tiempo de llenado -0.46, z de monto/ingreso +0.49; 3 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00498",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 6,
+  "score": 0.9016723653374604,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000596",
+   "A005912",
+   "A006102",
+   "A007587",
+   "A009323",
+   "A012089"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00498 (6 solicitudes) merece revisión.\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8583]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7612]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:6267]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4205]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:2070]).\n- Promedio de las 6 solicitudes: z del tiempo de llenado -0.76, z de monto/ingreso +0.23; 0 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la esperanza|m|9",
+    "valor_visible": "[direccion_hogar_aprox:8583]",
+    "refs": [
+     "A000596",
+     "A006102",
+     "A007587"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8583])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0080495",
+    "valor_visible": "[referencia:7612]",
+    "refs": [
+     "A000596",
+     "A005912",
+     "A012089"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7612])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0059429",
+    "valor_visible": "[referencia:6267]",
+    "refs": [
+     "A000596",
+     "A005912",
+     "A009323"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:6267])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0019879",
+    "valor_visible": "[referencia:4205]",
+    "refs": [
+     "A000596",
+     "A009323",
+     "A012089"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4205])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0002873",
+    "valor_visible": "[referencia:2070]",
+    "refs": [
+     "A005912",
+     "A009323",
+     "A012089"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:2070])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.756,
+     "z_ratio": 0.229,
+     "fallo_dom": 0,
+     "noche": 1,
+     "n": 6
+    },
+    "refs": [
+     "A000596",
+     "A005912",
+     "A006102",
+     "A007587",
+     "A009323",
+     "A012089"
+    ],
+    "texto": "Promedio de las 6 solicitudes: z del tiempo de llenado -0.76, z de monto/ingreso +0.23; 0 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00801",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 8,
+  "score": 0.45987622909155035,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000035",
+   "A000958",
+   "A005404",
+   "A006265",
+   "A007085",
+   "A009474",
+   "A012119",
+   "A012308"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00801 (8 solicitudes) merece revisión.\n- 3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1472]).\n- 6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9241]).\n- 4 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3714]).\n- 4 solicitudes comparten el mismo dispositivo ([dispositivo:3255]).\n- 4 solicitudes comparten el mismo teléfono (…982).\n- 4 de 8 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 8 solicitudes: z del tiempo de llenado -0.46, z de monto/ingreso +0.32; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la merced|x|28",
+    "valor_visible": "[direccion_hogar:1472]",
+    "refs": [
+     "A000958",
+     "A005404",
+     "A007085"
+    ],
+    "texto": "3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1472])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la merced|x|8",
+    "valor_visible": "[direccion_hogar_aprox:9241]",
+    "refs": [
+     "A000958",
+     "A005404",
+     "A007085",
+     "A009474",
+     "A012119",
+     "A012308"
+    ],
+    "texto": "6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9241])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la merced|x|2",
+    "valor_visible": "[direccion_hogar_aprox:3714]",
+    "refs": [
+     "A000035",
+     "A000958",
+     "A005404",
+     "A007085"
+    ],
+    "texto": "4 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3714])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D595d62776d",
+    "valor_visible": "[dispositivo:3255]",
+    "refs": [
+     "A000958",
+     "A005404",
+     "A006265",
+     "A007085"
+    ],
+    "texto": "4 solicitudes comparten el mismo dispositivo ([dispositivo:3255])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "928085982",
+    "valor_visible": "…982",
+    "refs": [
+     "A000958",
+     "A005404",
+     "A006265",
+     "A007085"
+    ],
+    "texto": "4 solicitudes comparten el mismo teléfono (…982)."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A000035",
+     "A005404",
+     "A006265",
+     "A007085"
+    ],
+    "texto": "4 de 8 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.459,
+     "z_ratio": 0.316,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 8
+    },
+    "refs": [
+     "A000035",
+     "A000958",
+     "A005404",
+     "A006265",
+     "A007085",
+     "A009474",
+     "A012119",
+     "A012308"
+    ],
+    "texto": "Promedio de las 8 solicitudes: z del tiempo de llenado -0.46, z de monto/ingreso +0.32; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00752",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 11,
+  "score": 0.14402581490460095,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000099",
+   "A001937",
+   "A004731",
+   "A007209",
+   "A007447",
+   "A007559",
+   "A007750",
+   "A008085",
+   "A008191",
+   "A008580",
+   "A012074"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00752 (11 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1462]).\n- 10 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6207]).\n- 5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6768]).\n- 3 solicitudes comparten el mismo dispositivo ([dispositivo:6538]).\n- 3 solicitudes comparten el mismo teléfono (…580).\n- Promedio de las 11 solicitudes: z del tiempo de llenado -0.41, z de monto/ingreso +0.32; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la merced|v|79",
+    "valor_visible": "[direccion_hogar:1462]",
+    "refs": [
+     "A000099",
+     "A001937",
+     "A004731",
+     "A008085"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1462])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la merced||79",
+    "valor_visible": "[direccion_hogar_aprox:6207]",
+    "refs": [
+     "A000099",
+     "A001937",
+     "A004731",
+     "A007209",
+     "A007447",
+     "A007559",
+     "A007750",
+     "A008085",
+     "A008580",
+     "A012074"
+    ],
+    "texto": "10 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6207])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la merced|v|7",
+    "valor_visible": "[direccion_hogar_aprox:6768]",
+    "refs": [
+     "A000099",
+     "A001937",
+     "A004731",
+     "A008085",
+     "A008191"
+    ],
+    "texto": "5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6768])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D1826dcf172",
+    "valor_visible": "[dispositivo:6538]",
+    "refs": [
+     "A000099",
+     "A004731",
+     "A008085"
+    ],
+    "texto": "3 solicitudes comparten el mismo dispositivo ([dispositivo:6538])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "907667580",
+    "valor_visible": "…580",
+    "refs": [
+     "A000099",
+     "A004731",
+     "A008085"
+    ],
+    "texto": "3 solicitudes comparten el mismo teléfono (…580)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.407,
+     "z_ratio": 0.322,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 11
+    },
+    "refs": [
+     "A000099",
+     "A001937",
+     "A004731",
+     "A007209",
+     "A007447",
+     "A007559",
+     "A007750",
+     "A008085",
+     "A008191",
+     "A008580",
+     "A012074"
+    ],
+    "texto": "Promedio de las 11 solicitudes: z del tiempo de llenado -0.41, z de monto/ingreso +0.32; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00695",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 5,
+  "score": 0.14193349458997154,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A001433",
+   "A002229",
+   "A011185",
+   "A011489",
+   "A011886"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+dispositivo+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00695 (5 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7124]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:0817]).\n- 3 solicitudes comparten el mismo negocio ([negocio:5529]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:0643]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:0497]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3640]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:7153]).\n- 3 solicitudes comparten el mismo teléfono (…913).\n- Promedio de las 5 solicitudes: z del tiempo de llenado -0.28, z de monto/ingreso -0.14; 1 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "santa maria|j|22",
+    "valor_visible": "[direccion_hogar:7124]",
+    "refs": [
+     "A001433",
+     "A002229",
+     "A011185",
+     "A011489",
+     "A011886"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7124])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Dd2b41a7b89",
+    "valor_visible": "[dispositivo:0817]",
+    "refs": [
+     "A002229",
+     "A011886"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:0817])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0032879",
+    "valor_visible": "[negocio:5529]",
+    "refs": [
+     "A001433",
+     "A011489",
+     "A011886"
+    ],
+    "texto": "3 solicitudes comparten el mismo negocio ([negocio:5529])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0008004",
+    "valor_visible": "[referencia:0643]",
+    "refs": [
+     "A011489",
+     "A011886"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:0643])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0079811",
+    "valor_visible": "[referencia:0497]",
+    "refs": [
+     "A001433",
+     "A011185"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:0497])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0044122",
+    "valor_visible": "[referencia:3640]",
+    "refs": [
+     "A001433",
+     "A011489"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3640])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0083065",
+    "valor_visible": "[referencia:7153]",
+    "refs": [
+     "A002229",
+     "A011185"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:7153])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "933492913",
+    "valor_visible": "…913",
+    "refs": [
+     "A011185",
+     "A011489",
+     "A011886"
+    ],
+    "texto": "3 solicitudes comparten el mismo teléfono (…913)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.276,
+     "z_ratio": -0.145,
+     "fallo_dom": 1,
+     "noche": 0,
+     "n": 5
+    },
+    "refs": [
+     "A001433",
+     "A002229",
+     "A011185",
+     "A011489",
+     "A011886"
+    ],
+    "texto": "Promedio de las 5 solicitudes: z del tiempo de llenado -0.28, z de monto/ingreso -0.14; 1 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01210",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 12,
+  "score": 0.09314084084500113,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000196",
+   "A001103",
+   "A001178",
+   "A001497",
+   "A001961",
+   "A004724",
+   "A005838",
+   "A006611",
+   "A007206",
+   "A008042",
+   "A008864",
+   "A010918"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01210 (12 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7307]).\n- 2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5607]).\n- 2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:3728]).\n- 8 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8143]).\n- 5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4117]).\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9601]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8734]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:2055]).\n- 3 solicitudes comparten el mismo negocio ([negocio:7383]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:0363]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:8817]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:4903]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3908]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:1068]).\n- 2 solicitudes comparten el mismo teléfono (…330).\n- Promedio de las 12 solicitudes: z del tiempo de llenado -0.24, z de monto/ingreso +0.46; 0 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|b|57",
+    "valor_visible": "[direccion_hogar:7307]",
+    "refs": [
+     "A001103",
+     "A001497",
+     "A001961",
+     "A007206",
+     "A008864"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7307])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|b|68",
+    "valor_visible": "[direccion_hogar:5607]",
+    "refs": [
+     "A000196",
+     "A010918"
+    ],
+    "texto": "2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5607])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|b|58",
+    "valor_visible": "[direccion_hogar:3728]",
+    "refs": [
+     "A005838",
+     "A006611"
+    ],
+    "texto": "2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:3728])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|b|5",
+    "valor_visible": "[direccion_hogar_aprox:8143]",
+    "refs": [
+     "A001103",
+     "A001497",
+     "A001961",
+     "A005838",
+     "A006611",
+     "A007206",
+     "A008042",
+     "A008864"
+    ],
+    "texto": "8 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8143])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|b|8",
+    "valor_visible": "[direccion_hogar_aprox:4117]",
+    "refs": [
+     "A000196",
+     "A004724",
+     "A005838",
+     "A006611",
+     "A010918"
+    ],
+    "texto": "5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4117])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|b|6",
+    "valor_visible": "[direccion_hogar_aprox:9601]",
+    "refs": [
+     "A000196",
+     "A001178",
+     "A010918"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9601])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|b|0",
+    "valor_visible": "[direccion_hogar_aprox:8734]",
+    "refs": [
+     "A001178",
+     "A008042"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8734])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D76df2113af",
+    "valor_visible": "[dispositivo:2055]",
+    "refs": [
+     "A001497",
+     "A001961"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:2055])."
+   },
+   {
+    "id": "R8",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0008912",
+    "valor_visible": "[negocio:7383]",
+    "refs": [
+     "A001103",
+     "A001497",
+     "A007206"
+    ],
+    "texto": "3 solicitudes comparten el mismo negocio ([negocio:7383])."
+   },
+   {
+    "id": "R9",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0027216",
+    "valor_visible": "[referencia:0363]",
+    "refs": [
+     "A001103",
+     "A001497"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:0363])."
+   },
+   {
+    "id": "R10",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0030634",
+    "valor_visible": "[referencia:8817]",
+    "refs": [
+     "A000196",
+     "A010918"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:8817])."
+   },
+   {
+    "id": "R11",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0100796",
+    "valor_visible": "[referencia:4903]",
+    "refs": [
+     "A001497",
+     "A008864"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:4903])."
+   },
+   {
+    "id": "R12",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0083737",
+    "valor_visible": "[referencia:3908]",
+    "refs": [
+     "A001961",
+     "A007206"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3908])."
+   },
+   {
+    "id": "R13",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0012743",
+    "valor_visible": "[referencia:1068]",
+    "refs": [
+     "A007206",
+     "A008864"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:1068])."
+   },
+   {
+    "id": "R14",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "992519330",
+    "valor_visible": "…330",
+    "refs": [
+     "A001103",
+     "A001497"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…330)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.236,
+     "z_ratio": 0.459,
+     "fallo_dom": 0,
+     "noche": 1,
+     "n": 12
+    },
+    "refs": [
+     "A000196",
+     "A001103",
+     "A001178",
+     "A001497",
+     "A001961",
+     "A004724",
+     "A005838",
+     "A006611",
+     "A007206",
+     "A008042",
+     "A008864",
+     "A010918"
+    ],
+    "texto": "Promedio de las 12 solicitudes: z del tiempo de llenado -0.24, z de monto/ingreso +0.46; 0 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00856",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 25,
+  "score": 0.02583899802571454,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000999",
+   "A001381",
+   "A003067",
+   "A004414",
+   "A004807",
+   "A005187",
+   "A005316",
+   "A005726",
+   "A006160",
+   "A006203",
+   "A006458",
+   "A006743",
+   "A006839",
+   "A007340",
+   "A008066",
+   "A008130",
+   "A008470",
+   "A008531",
+   "A009571",
+   "A010058",
+   "A010845",
+   "A010977",
+   "A011059",
+   "A011519",
+   "A011655"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00856 (25 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7983]).\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:2733]).\n- 9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9999]).\n- 6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0001]).\n- 5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0047]).\n- 4 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:5536]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0241]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3987]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1213]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2308]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:6594]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:5712]).\n- 4 solicitudes comparten la misma persona de referencia ([referencia:0902]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:5587]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7343]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:2495]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:7441]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:3235]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:4647]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:9948]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:6972]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3649]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:2979]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3788]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:9944]).\n- Promedio de las 25 solicitudes: z del tiempo de llenado -0.31, z de monto/ingreso +0.18; 2 con domicilio no verificado; 4 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "huanchaco|r|50",
+    "valor_visible": "[direccion_hogar:7983]",
+    "refs": [
+     "A003067",
+     "A005187",
+     "A006160",
+     "A006458"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7983])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "huanchaco|r|58",
+    "valor_visible": "[direccion_hogar:2733]",
+    "refs": [
+     "A006203",
+     "A008130",
+     "A008470",
+     "A011519"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:2733])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|5",
+    "valor_visible": "[direccion_hogar_aprox:9999]",
+    "refs": [
+     "A001381",
+     "A003067",
+     "A005187",
+     "A006160",
+     "A006203",
+     "A006458",
+     "A008130",
+     "A008470",
+     "A011519"
+    ],
+    "texto": "9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9999])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|8",
+    "valor_visible": "[direccion_hogar_aprox:0001]",
+    "refs": [
+     "A005316",
+     "A006203",
+     "A008130",
+     "A008470",
+     "A010058",
+     "A011519"
+    ],
+    "texto": "6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0001])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|0",
+    "valor_visible": "[direccion_hogar_aprox:0047]",
+    "refs": [
+     "A003067",
+     "A005187",
+     "A006160",
+     "A006458",
+     "A011059"
+    ],
+    "texto": "5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0047])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|7",
+    "valor_visible": "[direccion_hogar_aprox:5536]",
+    "refs": [
+     "A004414",
+     "A004807",
+     "A010058",
+     "A011655"
+    ],
+    "texto": "4 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:5536])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|9",
+    "valor_visible": "[direccion_hogar_aprox:0241]",
+    "refs": [
+     "A001381",
+     "A004807"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:0241])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "victor larco|v|2",
+    "valor_visible": "[direccion_hogar_aprox:3987]",
+    "refs": [
+     "A010845",
+     "A010977"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3987])."
+   },
+   {
+    "id": "R8",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|q|1",
+    "valor_visible": "[direccion_hogar_aprox:1213]",
+    "refs": [
+     "A008066",
+     "A009571"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1213])."
+   },
+   {
+    "id": "R9",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "huanchaco|r|2",
+    "valor_visible": "[direccion_hogar_aprox:2308]",
+    "refs": [
+     "A005316",
+     "A011059"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2308])."
+   },
+   {
+    "id": "R10",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D8312963001",
+    "valor_visible": "[dispositivo:6594]",
+    "refs": [
+     "A003067",
+     "A006160"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:6594])."
+   },
+   {
+    "id": "R11",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D688872b103",
+    "valor_visible": "[dispositivo:5712]",
+    "refs": [
+     "A006203",
+     "A011519"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:5712])."
+   },
+   {
+    "id": "R12",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0035635",
+    "valor_visible": "[referencia:0902]",
+    "refs": [
+     "A000999",
+     "A004807",
+     "A005726",
+     "A010977"
+    ],
+    "texto": "4 solicitudes comparten la misma persona de referencia ([referencia:0902])."
+   },
+   {
+    "id": "R13",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0044763",
+    "valor_visible": "[referencia:5587]",
+    "refs": [
+     "A006743",
+     "A007340",
+     "A008531"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:5587])."
+   },
+   {
+    "id": "R14",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0089549",
+    "valor_visible": "[referencia:7343]",
+    "refs": [
+     "A006743",
+     "A008066",
+     "A008531"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7343])."
+   },
+   {
+    "id": "R15",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0001046",
+    "valor_visible": "[referencia:2495]",
+    "refs": [
+     "A007340",
+     "A008531",
+     "A010058"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:2495])."
+   },
+   {
+    "id": "R16",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0010858",
+    "valor_visible": "[referencia:7441]",
+    "refs": [
+     "A006839",
+     "A008066",
+     "A010845"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:7441])."
+   },
+   {
+    "id": "R17",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0013338",
+    "valor_visible": "[referencia:3235]",
+    "refs": [
+     "A006839",
+     "A010058",
+     "A010845"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:3235])."
+   },
+   {
+    "id": "R18",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0043074",
+    "valor_visible": "[referencia:4647]",
+    "refs": [
+     "A006743",
+     "A008066",
+     "A010845"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:4647])."
+   },
+   {
+    "id": "R19",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0097179",
+    "valor_visible": "[referencia:9948]",
+    "refs": [
+     "A006839",
+     "A007340",
+     "A010058"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:9948])."
+   },
+   {
+    "id": "R20",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0046763",
+    "valor_visible": "[referencia:6972]",
+    "refs": [
+     "A003067",
+     "A006160"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:6972])."
+   },
+   {
+    "id": "R21",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0013422",
+    "valor_visible": "[referencia:3649]",
+    "refs": [
+     "A005187",
+     "A006458"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3649])."
+   },
+   {
+    "id": "R22",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0007949",
+    "valor_visible": "[referencia:2979]",
+    "refs": [
+     "A006203",
+     "A008470"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:2979])."
+   },
+   {
+    "id": "R23",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0017846",
+    "valor_visible": "[referencia:3788]",
+    "refs": [
+     "A008130",
+     "A008470"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3788])."
+   },
+   {
+    "id": "R24",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0015619",
+    "valor_visible": "[referencia:9944]",
+    "refs": [
+     "A008130",
+     "A011519"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:9944])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.31,
+     "z_ratio": 0.178,
+     "fallo_dom": 2,
+     "noche": 4,
+     "n": 25
+    },
+    "refs": [
+     "A000999",
+     "A001381",
+     "A003067",
+     "A004414",
+     "A004807",
+     "A005187",
+     "A005316",
+     "A005726",
+     "A006160",
+     "A006203",
+     "A006458",
+     "A006743",
+     "A006839",
+     "A007340",
+     "A008066",
+     "A008130",
+     "A008470",
+     "A008531",
+     "A009571",
+     "A010058",
+     "A010845",
+     "A010977",
+     "A011059",
+     "A011519",
+     "A011655"
+    ],
+    "texto": "Promedio de las 25 solicitudes: z del tiempo de llenado -0.31, z de monto/ingreso +0.18; 2 con domicilio no verificado; 4 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00105",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 5,
+  "score": 0.019465304019955706,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A004534",
+   "A005360",
+   "A006558",
+   "A009017",
+   "A009162"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00105 (5 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8465]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:1581]).\n- 3 solicitudes comparten el mismo teléfono (…585).\n- 3 de 5 solicitudes llenadas más rápido de lo habitual.\n- Promedio de las 5 solicitudes: z del tiempo de llenado -0.75, z de monto/ingreso -0.51; 1 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "los jardines|g|74",
+    "valor_visible": "[direccion_hogar:8465]",
+    "refs": [
+     "A004534",
+     "A005360",
+     "A006558",
+     "A009017",
+     "A009162"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8465])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0006997",
+    "valor_visible": "[referencia:1581]",
+    "refs": [
+     "A005360",
+     "A006558"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:1581])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "985342585",
+    "valor_visible": "…585",
+    "refs": [
+     "A004534",
+     "A006558",
+     "A009162"
+    ],
+    "texto": "3 solicitudes comparten el mismo teléfono (…585)."
+   },
+   {
+    "id": "C_llenado_rapido",
+    "familia": "conductual",
+    "tipo": "llenado_rapido",
+    "valor": null,
+    "valor_visible": "",
+    "refs": [
+     "A004534",
+     "A005360",
+     "A006558"
+    ],
+    "texto": "3 de 5 solicitudes llenadas más rápido de lo habitual."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.748,
+     "z_ratio": -0.512,
+     "fallo_dom": 1,
+     "noche": 0,
+     "n": 5
+    },
+    "refs": [
+     "A004534",
+     "A005360",
+     "A006558",
+     "A009017",
+     "A009162"
+    ],
+    "texto": "Promedio de las 5 solicitudes: z del tiempo de llenado -0.75, z de monto/ingreso -0.51; 1 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00413",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 8,
+  "score": 0.013016971282905365,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A003784",
+   "A003801",
+   "A003969",
+   "A004813",
+   "A004979",
+   "A006177",
+   "A007639",
+   "A008533"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar_aprox+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00413 (8 solicitudes) merece revisión.\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9217]).\n- 7 solicitudes comparten la misma persona de referencia ([referencia:6760]).\n- Promedio de las 8 solicitudes: z del tiempo de llenado -0.02, z de monto/ingreso +0.61; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "las palmeras|d|6",
+    "valor_visible": "[direccion_hogar_aprox:9217]",
+    "refs": [
+     "A003784",
+     "A008533"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:9217])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0096962",
+    "valor_visible": "[referencia:6760]",
+    "refs": [
+     "A003801",
+     "A003969",
+     "A004813",
+     "A004979",
+     "A006177",
+     "A007639",
+     "A008533"
+    ],
+    "texto": "7 solicitudes comparten la misma persona de referencia ([referencia:6760])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.024,
+     "z_ratio": 0.612,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 8
+    },
+    "refs": [
+     "A003784",
+     "A003801",
+     "A003969",
+     "A004813",
+     "A004979",
+     "A006177",
+     "A007639",
+     "A008533"
+    ],
+    "texto": "Promedio de las 8 solicitudes: z del tiempo de llenado -0.02, z de monto/ingreso +0.61; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00458",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 3,
+  "score": 0.009058708363683792,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A002498",
+   "A005467",
+   "A009161"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00458 (3 solicitudes) merece revisión.\n- 3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8204]).\n- 2 solicitudes comparten el mismo negocio ([negocio:4505]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:7824]).\n- 2 solicitudes comparten el mismo teléfono (…668).\n- Promedio de las 3 solicitudes: z del tiempo de llenado -0.48, z de monto/ingreso +0.39; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la esperanza|d|34",
+    "valor_visible": "[direccion_hogar:8204]",
+    "refs": [
+     "A002498",
+     "A005467",
+     "A009161"
+    ],
+    "texto": "3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8204])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0035505",
+    "valor_visible": "[negocio:4505]",
+    "refs": [
+     "A002498",
+     "A005467"
+    ],
+    "texto": "2 solicitudes comparten el mismo negocio ([negocio:4505])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0016718",
+    "valor_visible": "[referencia:7824]",
+    "refs": [
+     "A005467",
+     "A009161"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:7824])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "996367668",
+    "valor_visible": "…668",
+    "refs": [
+     "A005467",
+     "A009161"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…668)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.481,
+     "z_ratio": 0.387,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 3
+    },
+    "refs": [
+     "A002498",
+     "A005467",
+     "A009161"
+    ],
+    "texto": "Promedio de las 3 solicitudes: z del tiempo de llenado -0.48, z de monto/ingreso +0.39; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00956",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 2,
+  "score": 0.008805514662526081,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A001875",
+   "A010944"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00956 (2 solicitudes) merece revisión.\n- 2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7731]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:4116]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3321]).\n- Promedio de las 2 solicitudes: z del tiempo de llenado -1.30, z de monto/ingreso +1.44; 1 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la esperanza|a|2",
+    "valor_visible": "[direccion_hogar:7731]",
+    "refs": [
+     "A001875",
+     "A010944"
+    ],
+    "texto": "2 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:7731])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0004869",
+    "valor_visible": "[referencia:4116]",
+    "refs": [
+     "A001875",
+     "A010944"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:4116])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0084924",
+    "valor_visible": "[referencia:3321]",
+    "refs": [
+     "A001875",
+     "A010944"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3321])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -1.304,
+     "z_ratio": 1.443,
+     "fallo_dom": 1,
+     "noche": 0,
+     "n": 2
+    },
+    "refs": [
+     "A001875",
+     "A010944"
+    ],
+    "texto": "Promedio de las 2 solicitudes: z del tiempo de llenado -1.30, z de monto/ingreso +1.44; 1 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00612",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 9,
+  "score": 0.008298591639530395,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000212",
+   "A001927",
+   "A002723",
+   "A003683",
+   "A004695",
+   "A007816",
+   "A008560",
+   "A011620",
+   "A011883"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00612 (9 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:3158]).\n- 9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1761]).\n- 3 solicitudes comparten el mismo dispositivo ([dispositivo:8697]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3535]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:7135]).\n- 4 solicitudes comparten el mismo teléfono (…840).\n- Promedio de las 9 solicitudes: z del tiempo de llenado -0.41, z de monto/ingreso +0.51; 0 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la esperanza|w|70",
+    "valor_visible": "[direccion_hogar:3158]",
+    "refs": [
+     "A001927",
+     "A002723",
+     "A007816",
+     "A011883"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:3158])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la esperanza|w|0",
+    "valor_visible": "[direccion_hogar_aprox:1761]",
+    "refs": [
+     "A000212",
+     "A001927",
+     "A002723",
+     "A003683",
+     "A004695",
+     "A007816",
+     "A008560",
+     "A011620",
+     "A011883"
+    ],
+    "texto": "9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1761])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D6d9e38bf67",
+    "valor_visible": "[dispositivo:8697]",
+    "refs": [
+     "A002723",
+     "A007816",
+     "A011883"
+    ],
+    "texto": "3 solicitudes comparten el mismo dispositivo ([dispositivo:8697])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0064917",
+    "valor_visible": "[referencia:3535]",
+    "refs": [
+     "A001927",
+     "A002723"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3535])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0048466",
+    "valor_visible": "[referencia:7135]",
+    "refs": [
+     "A001927",
+     "A007816"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:7135])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "938904840",
+    "valor_visible": "…840",
+    "refs": [
+     "A001927",
+     "A002723",
+     "A007816",
+     "A011883"
+    ],
+    "texto": "4 solicitudes comparten el mismo teléfono (…840)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.415,
+     "z_ratio": 0.51,
+     "fallo_dom": 0,
+     "noche": 1,
+     "n": 9
+    },
+    "refs": [
+     "A000212",
+     "A001927",
+     "A002723",
+     "A003683",
+     "A004695",
+     "A007816",
+     "A008560",
+     "A011620",
+     "A011883"
+    ],
+    "texto": "Promedio de las 9 solicitudes: z del tiempo de llenado -0.41, z de monto/ingreso +0.51; 0 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00745",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 7,
+  "score": 0.007594135988472041,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000111",
+   "A000886",
+   "A002554",
+   "A006266",
+   "A007222",
+   "A010075",
+   "A011343"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+dispositivo+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00745 (7 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:9255]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:8301]).\n- 3 solicitudes comparten la misma persona de referencia ([referencia:1255]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:1942]).\n- 2 solicitudes comparten el mismo teléfono (…455).\n- Promedio de las 7 solicitudes: z del tiempo de llenado -0.36, z de monto/ingreso +0.35; 0 con domicilio no verificado; 2 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "los jardines|s|77",
+    "valor_visible": "[direccion_hogar:9255]",
+    "refs": [
+     "A000111",
+     "A002554",
+     "A006266",
+     "A007222",
+     "A010075"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:9255])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D7724c7b6f8",
+    "valor_visible": "[dispositivo:8301]",
+    "refs": [
+     "A002554",
+     "A010075"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:8301])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0079082",
+    "valor_visible": "[referencia:1255]",
+    "refs": [
+     "A000886",
+     "A006266",
+     "A011343"
+    ],
+    "texto": "3 solicitudes comparten la misma persona de referencia ([referencia:1255])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0089107",
+    "valor_visible": "[referencia:1942]",
+    "refs": [
+     "A000111",
+     "A002554"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:1942])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "935476455",
+    "valor_visible": "…455",
+    "refs": [
+     "A000111",
+     "A002554"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…455)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.359,
+     "z_ratio": 0.353,
+     "fallo_dom": 0,
+     "noche": 2,
+     "n": 7
+    },
+    "refs": [
+     "A000111",
+     "A000886",
+     "A002554",
+     "A006266",
+     "A007222",
+     "A010075",
+     "A011343"
+    ],
+    "texto": "Promedio de las 7 solicitudes: z del tiempo de llenado -0.36, z de monto/ingreso +0.35; 0 con domicilio no verificado; 2 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00763",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 5,
+  "score": 0.006764892104910614,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A003225",
+   "A003314",
+   "A005184",
+   "A009582",
+   "A011562"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+dispositivo+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00763 (5 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:6608]).\n- 3 solicitudes comparten el mismo dispositivo ([dispositivo:1462]).\n- 5 solicitudes comparten el mismo negocio ([negocio:2352]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:0721]).\n- 2 solicitudes comparten el mismo teléfono (…379).\n- Promedio de las 5 solicitudes: z del tiempo de llenado -0.51, z de monto/ingreso +0.17; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la merced|k|73",
+    "valor_visible": "[direccion_hogar:6608]",
+    "refs": [
+     "A003225",
+     "A003314",
+     "A005184",
+     "A009582",
+     "A011562"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:6608])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Df7eb5955a9",
+    "valor_visible": "[dispositivo:1462]",
+    "refs": [
+     "A003314",
+     "A009582",
+     "A011562"
+    ],
+    "texto": "3 solicitudes comparten el mismo dispositivo ([dispositivo:1462])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0023703",
+    "valor_visible": "[negocio:2352]",
+    "refs": [
+     "A003225",
+     "A003314",
+     "A005184",
+     "A009582",
+     "A011562"
+    ],
+    "texto": "5 solicitudes comparten el mismo negocio ([negocio:2352])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0088238",
+    "valor_visible": "[referencia:0721]",
+    "refs": [
+     "A003225",
+     "A003314"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:0721])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "993487379",
+    "valor_visible": "…379",
+    "refs": [
+     "A005184",
+     "A009582"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…379)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.514,
+     "z_ratio": 0.173,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 5
+    },
+    "refs": [
+     "A003225",
+     "A003314",
+     "A005184",
+     "A009582",
+     "A011562"
+    ],
+    "texto": "Promedio de las 5 solicitudes: z del tiempo de llenado -0.51, z de monto/ingreso +0.17; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01202",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 8,
+  "score": 0.005133082099516584,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A001464",
+   "A001504",
+   "A002619",
+   "A002992",
+   "A009701",
+   "A010611",
+   "A011260",
+   "A011455"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01202 (8 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:9142]).\n- 8 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3997]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:1639]).\n- 2 solicitudes comparten el mismo teléfono (…556).\n- Promedio de las 8 solicitudes: z del tiempo de llenado -0.73, z de monto/ingreso +0.07; 1 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|x|14",
+    "valor_visible": "[direccion_hogar:9142]",
+    "refs": [
+     "A001504",
+     "A002619",
+     "A002992",
+     "A009701"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:9142])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|x|1",
+    "valor_visible": "[direccion_hogar_aprox:3997]",
+    "refs": [
+     "A001464",
+     "A001504",
+     "A002619",
+     "A002992",
+     "A009701",
+     "A010611",
+     "A011260",
+     "A011455"
+    ],
+    "texto": "8 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3997])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "D4953338df0",
+    "valor_visible": "[dispositivo:1639]",
+    "refs": [
+     "A002992",
+     "A009701"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:1639])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "911235556",
+    "valor_visible": "…556",
+    "refs": [
+     "A002992",
+     "A009701"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…556)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.735,
+     "z_ratio": 0.074,
+     "fallo_dom": 1,
+     "noche": 0,
+     "n": 8
+    },
+    "refs": [
+     "A001464",
+     "A001504",
+     "A002619",
+     "A002992",
+     "A009701",
+     "A010611",
+     "A011260",
+     "A011455"
+    ],
+    "texto": "Promedio de las 8 solicitudes: z del tiempo de llenado -0.73, z de monto/ingreso +0.07; 1 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01252",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 6,
+  "score": 0.004902375503851302,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000268",
+   "A002525",
+   "A007143",
+   "A010808",
+   "A011392",
+   "A011861"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01252 (6 solicitudes) merece revisión.\n- 3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5839]).\n- 5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7208]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7332]).\n- 2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2711]).\n- 3 solicitudes comparten el mismo dispositivo ([dispositivo:3790]).\n- Promedio de las 6 solicitudes: z del tiempo de llenado +0.01, z de monto/ingreso +0.69; 1 con domicilio no verificado; 1 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|o|78",
+    "valor_visible": "[direccion_hogar:5839]",
+    "refs": [
+     "A002525",
+     "A007143",
+     "A011392"
+    ],
+    "texto": "3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5839])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|o|8",
+    "valor_visible": "[direccion_hogar_aprox:7208]",
+    "refs": [
+     "A000268",
+     "A002525",
+     "A007143",
+     "A010808",
+     "A011392"
+    ],
+    "texto": "5 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7208])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|o|",
+    "valor_visible": "[direccion_hogar_aprox:7332]",
+    "refs": [
+     "A000268",
+     "A011861"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:7332])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|o|1",
+    "valor_visible": "[direccion_hogar_aprox:2711]",
+    "refs": [
+     "A010808",
+     "A011861"
+    ],
+    "texto": "2 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:2711])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Dfef12de763",
+    "valor_visible": "[dispositivo:3790]",
+    "refs": [
+     "A002525",
+     "A007143",
+     "A011392"
+    ],
+    "texto": "3 solicitudes comparten el mismo dispositivo ([dispositivo:3790])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": 0.009,
+     "z_ratio": 0.685,
+     "fallo_dom": 1,
+     "noche": 1,
+     "n": 6
+    },
+    "refs": [
+     "A000268",
+     "A002525",
+     "A007143",
+     "A010808",
+     "A011392",
+     "A011861"
+    ],
+    "texto": "Promedio de las 6 solicitudes: z del tiempo de llenado +0.01, z de monto/ingreso +0.69; 1 con domicilio no verificado; 1 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R01266",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 13,
+  "score": 0.003591944011278267,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000259",
+   "A001394",
+   "A001668",
+   "A002283",
+   "A003354",
+   "A004033",
+   "A004842",
+   "A005857",
+   "A009046",
+   "A010021",
+   "A010067",
+   "A010779",
+   "A012129"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R01266 (13 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5405]).\n- 3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8200]).\n- 9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3598]).\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6359]).\n- 3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1858]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:8500]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3336]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:9082]).\n- 3 solicitudes comparten el mismo teléfono (…827).\n- Promedio de las 13 solicitudes: z del tiempo de llenado -0.21, z de monto/ingreso +0.22; 2 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|h|26",
+    "valor_visible": "[direccion_hogar:5405]",
+    "refs": [
+     "A000259",
+     "A004842",
+     "A010067",
+     "A010779"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:5405])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "alto trujillo|h|23",
+    "valor_visible": "[direccion_hogar:8200]",
+    "refs": [
+     "A001668",
+     "A004033",
+     "A009046"
+    ],
+    "texto": "3 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:8200])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|h|2",
+    "valor_visible": "[direccion_hogar_aprox:3598]",
+    "refs": [
+     "A000259",
+     "A001668",
+     "A002283",
+     "A004033",
+     "A004842",
+     "A009046",
+     "A010067",
+     "A010779",
+     "A012129"
+    ],
+    "texto": "9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:3598])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|h|4",
+    "valor_visible": "[direccion_hogar_aprox:6359]",
+    "refs": [
+     "A001394",
+     "A003354",
+     "A005857"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:6359])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "alto trujillo|h|9",
+    "valor_visible": "[direccion_hogar_aprox:1858]",
+    "refs": [
+     "A001394",
+     "A010021",
+     "A012129"
+    ],
+    "texto": "3 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:1858])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0049191",
+    "valor_visible": "[referencia:8500]",
+    "refs": [
+     "A004842",
+     "A010779"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:8500])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0008034",
+    "valor_visible": "[referencia:3336]",
+    "refs": [
+     "A010067",
+     "A010779"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3336])."
+   },
+   {
+    "id": "R7",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0041117",
+    "valor_visible": "[referencia:9082]",
+    "refs": [
+     "A001668",
+     "A004033"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:9082])."
+   },
+   {
+    "id": "R8",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "920282827",
+    "valor_visible": "…827",
+    "refs": [
+     "A000259",
+     "A004842",
+     "A010779"
+    ],
+    "texto": "3 solicitudes comparten el mismo teléfono (…827)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.212,
+     "z_ratio": 0.22,
+     "fallo_dom": 2,
+     "noche": 0,
+     "n": 13
+    },
+    "refs": [
+     "A000259",
+     "A001394",
+     "A001668",
+     "A002283",
+     "A003354",
+     "A004033",
+     "A004842",
+     "A005857",
+     "A009046",
+     "A010021",
+     "A010067",
+     "A010779",
+     "A012129"
+    ],
+    "texto": "Promedio de las 13 solicitudes: z del tiempo de llenado -0.21, z de monto/ingreso +0.22; 2 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00835",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 6,
+  "score": 0.0028246711589128286,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000311",
+   "A000759",
+   "A004694",
+   "A004722",
+   "A007270",
+   "A010429"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un empleador o familiar común puede ser referencia de varias personas."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+referencia",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00835 (6 solicitudes) merece revisión.\n- 4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1772]).\n- 6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8152]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:2704]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3485]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:2810]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:6768]).\n- Promedio de las 6 solicitudes: z del tiempo de llenado -0.35, z de monto/ingreso +0.44; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un empleador o familiar común puede ser referencia de varias personas.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la merced|i|4",
+    "valor_visible": "[direccion_hogar:1772]",
+    "refs": [
+     "A000759",
+     "A004694",
+     "A007270",
+     "A010429"
+    ],
+    "texto": "4 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:1772])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la merced|i|",
+    "valor_visible": "[direccion_hogar_aprox:8152]",
+    "refs": [
+     "A000311",
+     "A000759",
+     "A004694",
+     "A004722",
+     "A007270",
+     "A010429"
+    ],
+    "texto": "6 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:8152])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Db7b9c12d28",
+    "valor_visible": "[dispositivo:2704]",
+    "refs": [
+     "A000759",
+     "A004694"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:2704])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0075450",
+    "valor_visible": "[referencia:3485]",
+    "refs": [
+     "A000759",
+     "A004694"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3485])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0052453",
+    "valor_visible": "[referencia:2810]",
+    "refs": [
+     "A000759",
+     "A010429"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:2810])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0089979",
+    "valor_visible": "[referencia:6768]",
+    "refs": [
+     "A004694",
+     "A007270"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:6768])."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.352,
+     "z_ratio": 0.44,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 6
+    },
+    "refs": [
+     "A000311",
+     "A000759",
+     "A004694",
+     "A004722",
+     "A007270",
+     "A010429"
+    ],
+    "texto": "Promedio de las 6 solicitudes: z del tiempo de llenado -0.35, z de monto/ingreso +0.44; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ },
+ {
+  "caso_id": "R00988",
+  "tipo_caso": "relacional",
+  "n_solicitudes": 9,
+  "score": 0.0023594982587078705,
+  "familias": {
+   "relacional": true,
+   "conductual": true
+  },
+  "solicitudes": [
+   "A000592",
+   "A000695",
+   "A001011",
+   "A002410",
+   "A003583",
+   "A009515",
+   "A009792",
+   "A011411",
+   "A012178"
+  ],
+  "posibles_explicaciones_legitimas": [
+   "Los miembros de un hogar comparten domicilio.",
+   "Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas.",
+   "Un celular familiar o un cibercafé puede usarse para varias solicitudes.",
+   "Un negocio familiar puede figurar en más de una solicitud.",
+   "Un empleador o familiar común puede ser referencia de varias personas.",
+   "Familias y puestos de un mismo comercio suelen compartir un teléfono."
+  ],
+  "patron": "relacional|direccion_hogar+direccion_hogar_aprox+dispositivo+negocio+referencia+telefono",
+  "recomendacion": "Merece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "decision_automatica": false,
+  "resumen": "El caso R00988 (9 solicitudes) merece revisión.\n- 5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:4659]).\n- 9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4659]).\n- 2 solicitudes comparten el mismo dispositivo ([dispositivo:9484]).\n- 2 solicitudes comparten el mismo negocio ([negocio:3952]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:3432]).\n- 2 solicitudes comparten la misma persona de referencia ([referencia:9835]).\n- 2 solicitudes comparten el mismo teléfono (…610).\n- Promedio de las 9 solicitudes: z del tiempo de llenado -0.09, z de monto/ingreso +0.69; 0 con domicilio no verificado; 0 fuera de horario.\nPosibles explicaciones legítimas: Los miembros de un hogar comparten domicilio. Una misma vivienda puede escribirse de formas ligeramente distintas, o ser viviendas contiguas. Un celular familiar o un cibercafé puede usarse para varias solicitudes. Un negocio familiar puede figurar en más de una solicitud. Un empleador o familiar común puede ser referencia de varias personas. Familias y puestos de un mismo comercio suelen compartir un teléfono.\nMerece revisión por un especialista. Verificar los datos señalados antes de cualquier decisión sobre los clientes.",
+  "fallas_verificador": [],
+  "senales": [
+   {
+    "id": "R0",
+    "familia": "relacional",
+    "tipo": "direccion_hogar",
+    "valor": "la esperanza|n|7",
+    "valor_visible": "[direccion_hogar:4659]",
+    "refs": [
+     "A000695",
+     "A001011",
+     "A009792",
+     "A011411",
+     "A012178"
+    ],
+    "texto": "5 solicitudes comparten la misma dirección de domicilio ([direccion_hogar:4659])."
+   },
+   {
+    "id": "R1",
+    "familia": "relacional",
+    "tipo": "direccion_hogar_aprox",
+    "valor": "la esperanza|n|7",
+    "valor_visible": "[direccion_hogar_aprox:4659]",
+    "refs": [
+     "A000592",
+     "A000695",
+     "A001011",
+     "A002410",
+     "A003583",
+     "A009515",
+     "A009792",
+     "A011411",
+     "A012178"
+    ],
+    "texto": "9 solicitudes comparten una dirección de domicilio casi igual ([direccion_hogar_aprox:4659])."
+   },
+   {
+    "id": "R2",
+    "familia": "relacional",
+    "tipo": "dispositivo",
+    "valor": "Df7c3876a58",
+    "valor_visible": "[dispositivo:9484]",
+    "refs": [
+     "A009792",
+     "A011411"
+    ],
+    "texto": "2 solicitudes comparten el mismo dispositivo ([dispositivo:9484])."
+   },
+   {
+    "id": "R3",
+    "familia": "relacional",
+    "tipo": "negocio",
+    "valor": "N0028808",
+    "valor_visible": "[negocio:3952]",
+    "refs": [
+     "A001011",
+     "A011411"
+    ],
+    "texto": "2 solicitudes comparten el mismo negocio ([negocio:3952])."
+   },
+   {
+    "id": "R4",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0074228",
+    "valor_visible": "[referencia:3432]",
+    "refs": [
+     "A001011",
+     "A011411"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:3432])."
+   },
+   {
+    "id": "R5",
+    "familia": "relacional",
+    "tipo": "referencia",
+    "valor": "P0067013",
+    "valor_visible": "[referencia:9835]",
+    "refs": [
+     "A009792",
+     "A012178"
+    ],
+    "texto": "2 solicitudes comparten la misma persona de referencia ([referencia:9835])."
+   },
+   {
+    "id": "R6",
+    "familia": "relacional",
+    "tipo": "telefono",
+    "valor": "965834610",
+    "valor_visible": "…610",
+    "refs": [
+     "A000695",
+     "A001011"
+    ],
+    "texto": "2 solicitudes comparten el mismo teléfono (…610)."
+   },
+   {
+    "id": "C_agregado",
+    "familia": "conductual",
+    "tipo": "agregado",
+    "valor": null,
+    "valor_visible": "",
+    "numeros": {
+     "z_tiempo": -0.085,
+     "z_ratio": 0.692,
+     "fallo_dom": 0,
+     "noche": 0,
+     "n": 9
+    },
+    "refs": [
+     "A000592",
+     "A000695",
+     "A001011",
+     "A002410",
+     "A003583",
+     "A009515",
+     "A009792",
+     "A011411",
+     "A012178"
+    ],
+    "texto": "Promedio de las 9 solicitudes: z del tiempo de llenado -0.09, z de monto/ingreso +0.69; 0 con domicilio no verificado; 0 fuera de horario."
+   }
+  ]
+ }
+]

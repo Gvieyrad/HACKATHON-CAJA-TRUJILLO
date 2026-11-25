@@ -1,0 +1,26 @@
+# Conjunto ciego: ciego2
+
+Autor: agente de contexto limpio (NO independencia humana). Tipologías: {"domicilio_como_negocio": 8, "enlace_heterogeneo": 9, "fraccionamiento_multiagencia": 8, "sim_secuencial": 9}
+Pre-registro sha256 `8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c`; k=40 sobre 10000 solicitudes; 34 anillos.
+
+| método | n cola | precisión [IC95%] | recall anillos | grupos legít. en cola |
+|---|---|---|---|---|
+| lgbm_puerta | 40 | 0.00 [0.00, 0.00] | 0.00 | 0.042 |
+| lgbm_sin_puerta | 40 | 0.07 [0.00, 0.17] | 0.09 | 0.102 |
+| lgbm_solo_relacional | 40 | 0.12 [0.03, 0.24] | 0.12 | 0.127 |
+| sorpresa | 40 | 0.20 [0.08, 0.34] | 0.21 | 0.025 |
+| regla_exacta | 40 | 0.10 [0.02, 0.21] | 0.12 | 0.203 |
+| regla_exacta_con_tope | 40 | 0.10 [0.02, 0.21] | 0.12 | 0.203 |
+
+Recall por tipología:
+
+- lgbm_puerta: domicilio_como_negocio=0.00, enlace_heterogeneo=0.00, fraccionamiento_multiagencia=0.00, sim_secuencial=0.00
+- lgbm_sin_puerta: domicilio_como_negocio=0.00, enlace_heterogeneo=0.00, fraccionamiento_multiagencia=0.38, sim_secuencial=0.00
+- lgbm_solo_relacional: domicilio_como_negocio=0.00, enlace_heterogeneo=0.00, fraccionamiento_multiagencia=0.50, sim_secuencial=0.00
+- sorpresa: domicilio_como_negocio=0.00, enlace_heterogeneo=0.00, fraccionamiento_multiagencia=0.88, sim_secuencial=0.00
+- regla_exacta: domicilio_como_negocio=0.00, enlace_heterogeneo=0.44, fraccionamiento_multiagencia=0.00, sim_secuencial=0.00
+- regla_exacta_con_tope: domicilio_como_negocio=0.00, enlace_heterogeneo=0.44, fraccionamiento_multiagencia=0.00, sim_secuencial=0.00
+
+Diferencia de precisión lgbm_puerta menos regla_exacta_con_tope: {"diferencia_precision": -0.10010855206028381, "ic_lo": -0.20512820512820512, "ic_hi": -0.023255813953488372}
+C5 (límite inferior del IC > 0): NO CUMPLE
+Diferencia de precisión sorpresa menos regla_exacta_con_tope: {"diferencia_precision": 0.10286762732848775, "ic_lo": -0.048782051282051285, "ic_hi": 0.26047556267068456}

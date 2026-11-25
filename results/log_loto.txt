@@ -1,0 +1,5 @@
+  LOTO sin colusion_asesor
+  LOTO sin identidad_sintetica
+  LOTO sin prestanombres
+  LOTO sin referencias_cruzadas
+  LOTO sin sin_atributos

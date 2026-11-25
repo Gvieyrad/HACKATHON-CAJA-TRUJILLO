@@ -1,0 +1,174 @@
+{
+ "semilla": 202,
+ "version_prereg": 4,
+ "sha256_prereg": "7576ecdad989de11559a749b4943401e0664a7a2df52a40a2f215f8a712123d5",
+ "k_final": 50,
+ "n_apps_final": 12321,
+ "tabla": [
+  {
+   "metodo": "lgbm_puerta",
+   "n_cola": 27,
+   "precision": 0.4444444444444444,
+   "prec_ic_lo": 0.25925925925925924,
+   "prec_ic_hi": 0.6296296296296297,
+   "recall_anillos": 0.3,
+   "fp_grupos_legit": 0.0125,
+   "cola_legit_grupo": 0.48148148148148145,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.375,
+    "prestanombres": 0.5,
+    "referencias_cruzadas": 0.625,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.013171225937183385,
+    "mercado": 0.0
+   }
+  },
+  {
+   "metodo": "lgbm_sin_puerta",
+   "n_cola": 50,
+   "precision": 0.42,
+   "prec_ic_lo": 0.3,
+   "prec_ic_hi": 0.56,
+   "recall_anillos": 0.525,
+   "fp_grupos_legit": 0.01730769230769231,
+   "cola_legit_grupo": 0.36,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.625,
+    "prestanombres": 1.0,
+    "referencias_cruzadas": 1.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.0182370820668693,
+    "mercado": 0.0
+   }
+  },
+  {
+   "metodo": "lgbm_solo_relacional",
+   "n_cola": 50,
+   "precision": 0.44,
+   "prec_ic_lo": 0.31950000000000006,
+   "prec_ic_hi": 0.58,
+   "recall_anillos": 0.55,
+   "fp_grupos_legit": 0.019230769230769232,
+   "cola_legit_grupo": 0.4,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.75,
+    "prestanombres": 1.0,
+    "referencias_cruzadas": 1.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.015197568389057751,
+    "mercado": 0.11363636363636363
+   }
+  },
+  {
+   "metodo": "regla_exacta",
+   "n_cola": 50,
+   "precision": 0.26,
+   "prec_ic_lo": 0.16,
+   "prec_ic_hi": 0.4,
+   "recall_anillos": 0.325,
+   "fp_grupos_legit": 0.035576923076923075,
+   "cola_legit_grupo": 0.74,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.75,
+    "prestanombres": 0.875,
+    "referencias_cruzadas": 0.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 1.0,
+    "familia": 0.02634245187436677,
+    "mercado": 0.045454545454545456
+   }
+  },
+  {
+   "metodo": "regla_exacta_con_tope",
+   "n_cola": 50,
+   "precision": 0.26,
+   "prec_ic_lo": 0.1568627450980392,
+   "prec_ic_hi": 0.3877551020408163,
+   "recall_anillos": 0.325,
+   "fp_grupos_legit": 0.03461538461538462,
+   "cola_legit_grupo": 0.74,
+   "recall_por_tipologia": {
+    "colusion_asesor": 0.0,
+    "identidad_sintetica": 0.75,
+    "prestanombres": 0.875,
+    "referencias_cruzadas": 0.0,
+    "sin_atributos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "ciber": 0.0,
+    "familia": 0.034447821681864235,
+    "mercado": 0.045454545454545456
+   }
+  }
+ ],
+ "veredicto": {
+  "C1": {
+   "cumple": false,
+   "diferencia_precision": 0.19252647014748486,
+   "ic_lo": -0.026740740740740742,
+   "ic_hi": 0.4139433551198257
+  },
+  "C2": {
+   "cumple": false,
+   "valor": 0.48148148148148145
+  },
+  "C3": {
+   "cumple": true,
+   "valor": 1.3279110299609926
+  },
+  "C4": {
+   "cumple": true,
+   "valor": 0.5
+  }
+ },
+ "anticipacion": [
+  {
+   "tipologia": "colusion_asesor",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.375,
+   "evitables_medios": 0.16666666666666666
+  },
+  {
+   "tipologia": "identidad_sintetica",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.5,
+   "evitables_medios": 0.0625
+  },
+  {
+   "tipologia": "prestanombres",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.5,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "referencias_cruzadas",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.625,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "sin_atributos",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  }
+ ],
+ "c3_alertas_por_1000": 1.3279110299609926,
+ "expedientes": 27,
+ "fallas_verificador": 0
+}

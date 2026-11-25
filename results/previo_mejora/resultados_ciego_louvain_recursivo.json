@@ -1,0 +1,166 @@
+{
+ "carpeta": "data/ciego",
+ "sha256_prereg": "7576ecdad989de11559a749b4943401e0664a7a2df52a40a2f215f8a712123d5",
+ "k_final": 41,
+ "n_apps_final": 10250,
+ "tabla": [
+  {
+   "metodo": "lgbm_puerta",
+   "n_cola": 41,
+   "precision": 0.024390243902439025,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.07317073170731707,
+   "recall_anillos": 0.02631578947368421,
+   "fp_grupos_legit": 0.02139917695473251,
+   "cola_legit_grupo": 0.6341463414634146,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.125,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.0,
+    "cooperativa": 0.025,
+    "familia": 0.03571428571428571,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  },
+  {
+   "metodo": "lgbm_sin_puerta",
+   "n_cola": 41,
+   "precision": 0.024390243902439025,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.07317073170731707,
+   "recall_anillos": 0.02631578947368421,
+   "fp_grupos_legit": 0.024691358024691357,
+   "cola_legit_grupo": 0.7317073170731707,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.125,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.016666666666666666,
+    "ciber": 0.0,
+    "cooperativa": 0.0,
+    "familia": 0.04,
+    "mercado": 0.0,
+    "parientes_avales": 0.002857142857142857
+   }
+  },
+  {
+   "metodo": "lgbm_solo_relacional",
+   "n_cola": 41,
+   "precision": 0.0,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.0,
+   "recall_anillos": 0.0,
+   "fp_grupos_legit": 0.031275720164609055,
+   "cola_legit_grupo": 0.926829268292683,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.0
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.0,
+    "cooperativa": 0.0,
+    "familia": 0.04285714285714286,
+    "mercado": 0.0,
+    "parientes_avales": 0.022857142857142857
+   }
+  },
+  {
+   "metodo": "regla_exacta",
+   "n_cola": 41,
+   "precision": 0.0975609756097561,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.24444444444444444,
+   "recall_anillos": 0.05263157894736842,
+   "fp_grupos_legit": 0.027983539094650206,
+   "cola_legit_grupo": 0.8292682926829268,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.18181818181818182
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 1.0,
+    "cooperativa": 0.0,
+    "familia": 0.012857142857142857,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  },
+  {
+   "metodo": "regla_exacta_con_tope",
+   "n_cola": 41,
+   "precision": 0.0975609756097561,
+   "prec_ic_lo": 0.0,
+   "prec_ic_hi": 0.24444444444444444,
+   "recall_anillos": 0.05263157894736842,
+   "fp_grupos_legit": 0.027983539094650206,
+   "cola_legit_grupo": 0.8292682926829268,
+   "recall_por_tipologia": {
+    "cadena_avales": 0.0,
+    "direccion_escalonada": 0.0,
+    "rafaga_casi_igual": 0.0,
+    "rotacion_dispositivos": 0.18181818181818182
+   },
+   "fp_por_tipo_grupo": {
+    "asesor_barrio": 0.0,
+    "ciber": 0.8,
+    "cooperativa": 0.0,
+    "familia": 0.02,
+    "mercado": 0.0,
+    "parientes_avales": 0.0
+   }
+  }
+ ],
+ "diferencia_vs_regla_con_tope": {
+  "diferencia_precision": -0.0669752753037931,
+  "ic_lo": -0.22789309807991698,
+  "ic_hi": 0.04878048780487805
+ },
+ "anillos": 38,
+ "tipologias": {
+  "cadena_avales": 10,
+  "direccion_escalonada": 8,
+  "rafaga_casi_igual": 9,
+  "rotacion_dispositivos": 11
+ },
+ "anticipacion": [
+  {
+   "tipologia": "cadena_avales",
+   "anillos": 10,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  },
+  {
+   "tipologia": "direccion_escalonada",
+   "anillos": 8,
+   "detectados_en_alguna_instantanea": 0.125,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "rafaga_casi_igual",
+   "anillos": 9,
+   "detectados_en_alguna_instantanea": 0.4444444444444444,
+   "evitables_medios": 0.0
+  },
+  {
+   "tipologia": "rotacion_dispositivos",
+   "anillos": 11,
+   "detectados_en_alguna_instantanea": 0.0,
+   "evitables_medios": null
+  }
+ ]
+}
