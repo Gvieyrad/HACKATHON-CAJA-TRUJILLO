@@ -1,6 +1,6 @@
 # Resultados RIE-02 — semilla 202
 
-Pre-registro v5 sha256 `8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c`
+Pre-registro v6 sha256 `6ae1dc9459e1e2df1a23e8a7f8fc69f05c0cae0fe53dca75bccc8126468d4105`
 
 ## Cola final (presupuesto k=50 casos, 12321 solicitudes)
 

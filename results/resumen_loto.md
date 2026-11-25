@@ -6,9 +6,9 @@ Recall de la tipología retenida (el modelo NO vio positivos de esa tipología a
 |---|---|---|---|---|---|
 | colusion_asesor | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | identidad_sintetica | 0.25 | 0.25 | 0.38 | 0.75 | 0.50 |
-| prestanombres | 0.75 | 1.00 | 1.00 | 0.88 | 1.00 |
-| referencias_cruzadas | 0.38 | 0.62 | 0.00 | 0.00 | 1.00 |
+| prestanombres | 0.75 | 1.00 | 0.88 | 0.88 | 1.00 |
+| referencias_cruzadas | 0.50 | 0.75 | 0.00 | 0.00 | 0.88 |
 | sin_atributos | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| **media** | 0.28 | 0.38 | 0.28 | 0.33 | |
+| **media** | 0.30 | 0.40 | 0.25 | 0.33 | |
 
 C6 (lgbm_sin_puerta >= regla_exacta_con_tope en recall medio de la tipología retenida): CUMPLE

@@ -70,6 +70,8 @@ Precisión de la cola. En el ciego 2:
 
 Recall medio de la tipología retenida: lgbm_sin_puerta 0,38; sorpresa 0,28; regla 0,33. **C6 cumple, por poco.** Dos de las cinco tipologías dan 0 con todos los métodos. El modelo pierde mucho al no verlas (referencias_cruzadas baja de 1,00 a 0,62; identidad_sintetica de 0,50 a 0,25).
 
+**Repetido con el código v6 congelado (25-nov, informativo, no oficial):** recall medio de la tipología retenida: lgbm_sin_puerta 0,40; lgbm_puerta 0,30; sorpresa 0,25; regla 0,33. C6 sigue cumpliendo para `lgbm_sin_puerta`, y `lgbm_puerta` sigue perdiendo contra la regla. En `identidad_sintetica` la regla (0,75) supera al modelo sin verla (0,25). En el desarrollo (semilla 202) con v6 las cifras reproducen exactamente las de la auditoría (lgbm_puerta 0,45 frente a regla 0,26; IC inferior de la diferencia −0,0097; C1 no cumple), lo que confirma el determinismo del código corregido. Archivos: `results/resumen_desarrollo.md`, `results/resumen_loto.md`.
+
 ## Historia de enmiendas (lo que se decidió antes y después de ver resultados)
 
 - E1–E4: antes del ciego 1 y de la semilla 777.

@@ -1,7 +1,7 @@
 {
  "semilla": 202,
- "version_prereg": 5,
- "sha256_prereg": "8a238067aeba9eafacf217a6daa42207d453f6a17e774ea5c0cbf7f84beb555c",
+ "version_prereg": 6,
+ "sha256_prereg": "6ae1dc9459e1e2df1a23e8a7f8fc69f05c0cae0fe53dca75bccc8126468d4105",
  "k_final": 50,
  "n_apps_final": 12321,
  "tabla": [
