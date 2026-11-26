@@ -72,6 +72,8 @@ Recall medio de la tipología retenida: lgbm_sin_puerta 0,38; sorpresa 0,28; reg
 
 **Repetido con el código v6 congelado (25-nov, informativo, no oficial):** recall medio de la tipología retenida: lgbm_sin_puerta 0,40; lgbm_puerta 0,30; sorpresa 0,25; regla 0,33. C6 sigue cumpliendo para `lgbm_sin_puerta`, y `lgbm_puerta` sigue perdiendo contra la regla. En `identidad_sintetica` la regla (0,75) supera al modelo sin verla (0,25). En el desarrollo (semilla 202) con v6 las cifras reproducen exactamente las de la auditoría (lgbm_puerta 0,45 frente a regla 0,26; IC inferior de la diferencia −0,0097; C1 no cumple), lo que confirma el determinismo del código corregido. Archivos: `results/resumen_desarrollo.md`, `results/resumen_loto.md`.
 
+**Backtest con 5 semillas nuevas (1001-1005, v6 congelada, 25-nov, informativo, no oficial, solo vale para nuestro generador):** `lgbm_puerta` supera a la regla en las 5 (diferencia media +0,235), C1 cumple en 4 (falla la 1005), C2 no cumple en ninguna, C3 y C4 cumplen en las 5. Se reportan todas las semillas, sin elegir. Script: `scripts/backtest_semillas.py`; resultados: `results/backtest_semillas.json`, `results/log_backtest_semillas.txt`.
+
 ## Historia de enmiendas (lo que se decidió antes y después de ver resultados)
 
 - E1–E4: antes del ciego 1 y de la semilla 777.
